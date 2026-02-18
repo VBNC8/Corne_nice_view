@@ -1,13 +1,14 @@
-&nice_view_spi {
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
-};
-
 / {
     chosen {
         zmk,display = &nice_view;
     };
 };
 
-&left_encoder {
+&nice_view_spi {
+    status = "okay";
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+};
+
+&nice_view {
     status = "okay";
 };
