@@ -1,5 +1,3 @@
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
     chosen {
         zmk,display = &nice_view;
@@ -8,9 +6,12 @@
 
 &nice_view_spi {
     status = "okay";
+    /* Wir definieren den CS Pin sehr explizit */
     cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 };
 
 &nice_view {
     status = "okay";
+    /* Manche nice!views brauchen eine Taktrate von 1MHz zum Starten */
+    spi-max-frequency = <1000000>;
 };
