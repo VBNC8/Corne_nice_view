@@ -9,6 +9,12 @@ parse_config:
     "&kp EQUAL": "´"
     
     # Symbole (Shift-Ebenen im US-Layout, die DE-Zeichen ergeben)
+    "&kp LS(N1)": "!"
+    "&kp LS(N2)": "\""
+    "&kp LS(N3)": "§"
+    "&kp LS(N4)": "$"
+    "&kp LS(N5)": "%"
+    "&kp LS(N6)": "&"
     "&kp LS(N7)": "/"
     "&kp LS(N8)": "("
     "&kp LS(N9)": ")"
@@ -30,6 +36,10 @@ parse_config:
     "&kp RA(MINUS)": "\\"
     "&kp RA(SQT)": "´"
     
+    # Maustasten (Symbole statt Text)
+    "&mkp LCLK": "🖱️ L-Klick"
+    "&mkp RCLK": "🖱️ R-Klick"
+    
     # --- DEINE FARB-LOGIK ---
     # Trigger (Daumen)
     "&lt 1 TAB": '<tspan fill="red" font-weight="bold">TAB</tspan>'
@@ -50,5 +60,4 @@ draw_config:
   key_w: 60.0         
   key_h: 56.0         
   fontsize: 10        
-  # Umrandung der aktuell aktiven Layer-Taste (standardmäßig rot)
   held_key_style: "fill: #333; stroke: red; stroke-width: 2;"
