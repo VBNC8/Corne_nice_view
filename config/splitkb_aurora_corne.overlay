@@ -1,3 +1,13 @@
+/* Wir adressieren das Display direkt ueber das Label, 
+   das das nice_view Shield bereitstellt */
+&nice_view {
+    status = "okay";
+};
+
+/* Der CS-Pin muss trotzdem auf deinen fliegenden Draht verbogen werden.
+   Der Adapter nennt den Bus intern meistens 'spi0' oder nutzt 'nice_view_spi' 
+   aus dem Shield-Kontext. Versuchen wir es so: */
+
 &nice_view_spi {
     cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 };
