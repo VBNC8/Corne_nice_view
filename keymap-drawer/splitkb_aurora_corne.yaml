@@ -58,15 +58,15 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '|'
-  - Sft+|
+  - <
+  - '>'
   - AltGr+|
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AltGr+7
-  - AltGr+8
-  - AltGr+9
-  - AltGr+0
+  - '{'
+  - '['
+  - ']'
+  - '}'
   - '#'
   - {t: ▽, type: trans}
   - LGUI
@@ -75,21 +75,21 @@ layers:
   - END
   - {t: ▽, type: trans}
   raise:
-  - AltGr+Q
-  - AltGr+E
+  - '@'
+  - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ^
-  - '['
-  - AltGr+-
-  - ;
+  - ü
+  - \
+  - ö
   - )
-  - ''''
-  - '-'
+  - ä
+  - ß
   - '&mkp RCLK'
   - '&mkp LCLK'
-  - '&durchmesser'
+  - Ø
   - UP
   - LEFT
   - DOWN
@@ -105,7 +105,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - AltGr+]
-  - '&smiley'
+  - ☺
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,8 +120,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&jigg_off'
-  - '&jigg_on'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
