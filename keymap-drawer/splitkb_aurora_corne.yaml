@@ -70,9 +70,9 @@ layers:
   - '#'
   - {t: ▽, type: trans}
   - LGUI
-  - {type: held}
-  - HOME
+  - {t: HOME, type: held}
   - END
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
   - '@'
