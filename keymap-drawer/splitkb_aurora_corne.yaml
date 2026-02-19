@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RSHIFT}
   - {t: K, h: RCTRL}
   - L
-  - /
+  - {t: '-', s: _}
   - Z
   - {t: X, h: LALT}
   - C
@@ -33,8 +33,8 @@ layers:
   - DEL
   - PP
   - {t: ESC, h: raise}
-  - LOWER (TAB)
-  - LOWER (RET)
+  - {t: TAB, h: lower}
+  - {t: RET, h: lower}
   - {t: SPACE, h: raise}
   - {t: BSPC, h: adjust}
   lower:
@@ -58,7 +58,7 @@ layers:
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - '|'
+  - {t: <, s: '>'}
   - Sft+|
   - AltGr+|
   - {t: ▽, type: trans}
@@ -70,21 +70,21 @@ layers:
   - '#'
   - {t: ▽, type: trans}
   - LGUI
-  - ⤒ Pos1
+  - {t: ⤒ Pos1, type: held}
   - ⤓ Ende
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - AltGr+Q
-  - AltGr+E
+  - '@'
+  - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ^
   - {t: ü, s: Ü}
-  - AltGr+-
+  - \
   - {t: ö, s: Ö}
-  - )
+  - '='
   - {t: ä, s: Ä}
   - {t: ß, s: '?'}
   - 🖱️ R
@@ -94,8 +94,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - ']'
-  - AltGr+'
+  - +
+  - ´
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AltGr+]
+  - '~'
   - ☺
   - {type: held}
   - {t: ▽, type: trans}
@@ -181,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
