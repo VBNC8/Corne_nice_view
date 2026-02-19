@@ -29,8 +29,6 @@ parse_config:
     # Deine speziellen Macros/Behaviors
     "&smiley": "☺"
     "&durchmesser": "Ø"
-    "&jigg_on": "Jig ON"
-    "&jigg_off": "Jig OFF"
 
 draw_config:
   dark_mode: true
