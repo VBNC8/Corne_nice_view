@@ -13,11 +13,5 @@ jobs:
     with:
       keymap_patterns: "config/*.keymap"
       output_folder: "keymap-drawer"
-      # install_args wurde entfernt, da nicht mehr benötigt
-      commit_message: "docs: [keymap-drawer] automatische Aktualisierung der Keymap-Grafik"
-
-    with:
-      keymap_patterns: "config/*.keymap"
-      output_folder: "keymap-drawer"
       config_path: "config/keymap_drawer.config.yaml" # <--- Diese Zeile hinzufügen!
       commit_message: "docs: [keymap-drawer] Symbole und Layout verfeinert"
