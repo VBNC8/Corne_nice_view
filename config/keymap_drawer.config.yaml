@@ -1,6 +1,6 @@
 parse_config:
   raw_binding_map:
-    # Symbole für AltGr (Right Alt) Kombinationen
+    # Brackets & Braces (AltGr Kombinationen)
     "&kp RA(N7)": "{"
     "&kp RA(N8)": "["
     "&kp RA(N9)": "]"
@@ -10,36 +10,22 @@ parse_config:
     "&kp RA(MINUS)": "\\"
     "&kp RA(SQT)": "´"
     "&kp RA(RBKT)": "~"
-    
-    # Deutsche Umlaute (falls über ZMK-De-Header oder Alias genutzt)
-    # Wenn du sie als Key-Codes sendest, hier die entsprechenden Mappings:
-    "&kp DE_U_UMLAUT": "Ü"
+
+    # Umlaute (Wenn du sie in der Keymap via Shift+... oder Alias hast)
+    # Falls du in der Keymap z.B. &kp DE_ADIA schreibst, muss das hier auch so stehen:
     "&kp DE_A_UMLAUT": "Ä"
     "&kp DE_O_UMLAUT": "Ö"
-    "&kp DE_SZ": "ß"
-
-    # Sonderzeichen & Navigation
-    "&kp NON_US_BSLH": "<"
+    "&kp DE_U_UMLAUT": "Ü"
+    "&kp DE_SS": "ß"
+    
+    # Sonderzeichen aus deinem Bild (Sft+` etc.)
+    "&kp LS(GRAVE)": "°"
     "&kp LS(NON_US_BSLH)": ">"
     "&kp RA(NON_US_BSLH)": "|"
-    "&kp NON_US_HASH": "#"
-    "&kp LS(GRAVE)": "°"
-    "&kp GRAVE": "^"
-    "&kp TILDE": "~"
-    "&kp CARET": "^"
+    "&kp NON_US_BSLH)": "<"
 
-    # Behaviors/Macros hübsch machen
-    "&durchmesser": "Ø"
+    # Deine funktionierenden Mappings zur Sicherheit behalten
     "&smiley": "☺"
+    "&durchmesser": "Ø"
     "&jigg_on": "Jig ON"
     "&jigg_off": "Jig OFF"
-
-    # Layer & Media
-    "&ext_power EP_TOG": "⚡ Toggle"
-    "&out OUT_BLE": "BLE"
-    "&out OUT_USB": "USB"
-
-draw_config:
-  dark_mode: true
-  n_columns: 3
-  split_gap: 30.0 # Macht die Lücke zwischen den Hälften etwas hübscher
