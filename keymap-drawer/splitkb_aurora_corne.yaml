@@ -33,8 +33,8 @@ layers:
   - DEL
   - PP
   - {t: ESC, h: raise}
-  - {t: TAB, h: lower}
-  - {t: RET, h: lower}
+  - <tspan fill="red" font-weight="bold">TAB</tspan>
+  - <tspan fill="#00e5ff" font-weight="bold">RET</tspan>
   - {t: SPACE, h: raise}
   - {t: BSPC, h: adjust}
   lower:
@@ -70,8 +70,8 @@ layers:
   - '#'
   - {t: ▽, type: trans}
   - LGUI
-  - {t: HOME, type: held}
-  - END
+  - <tspan fill="red" font-weight="bold">⤒ Pos1</tspan>
+  - <tspan fill="#00e5ff" font-weight="bold">⤓ Ende</tspan>
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
@@ -95,7 +95,7 @@ layers:
   - DOWN
   - RIGHT
   - +
-  - AltGr+'
+  - ´
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,7 +181,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
