@@ -1,6 +1,6 @@
 parse_config:
   raw_binding_map:
-    # --- ZAHLENREIHE (Fix für " über der 2) ---
+    # --- ZAHLENREIHE ---
     "&kp N1": {t: "1", s: "!"}
     "&kp N2": {t: "2", s: "\""}
     "&kp N3": {t: "3", s: "§"}
@@ -12,39 +12,42 @@ parse_config:
     "&kp N9": {t: "9", s: ")"}
     "&kp N0": {t: "0", s: "="}
 
-    # --- BRACKETS (Wir lassen &kp weg, falls der Drawer es intern kürzt) ---
-    "RA(N7)": "{"
-    "RA(N8)": "["
-    "RA(N9)": "]"
-    "RA(N0)": "}"
-    "&kp RA(N7)": "{"
-    "&kp RA(N8)": "["
-    "&kp RA(N9)": "]"
-    "&kp RA(N0)": "}"
-
-    # --- DAUMEN (Einfacher Text ohne kaputte Farben) ---
-    "&lt 1 TAB": "LOWER (TAB)"
-    "&lt 1 RET": "LOWER (RET)"
-    "&kp HOME": "⤒ Pos1"
-    "&kp END": "⤓ Ende"
-
-    # --- MAUS & MACROS ---
-    "&mkp LCLK": "🖱️ L"
-    "&mkp RCLK": "🖱️ R"
-    "&smiley": "☺"
-    "&durchmesser": "Ø"
-
-    # --- RESTLICHE DE-KORREKTUREN ---
+    # --- RECHTE SEITE (Raise/Lower Fixes) ---
+    "&kp RPAR": "="
+    "&kp RBKT": "+"
+    "&kp RA(RBKT)": "~"
     "&kp SEMI": {t: "ö", s: "Ö"}
     "&kp SQT": {t: "ä", s: "Ä"}
     "&kp LBKT": {t: "ü", s: "Ü"}
     "&kp MINUS": {t: "ß", s: "?"}
+    "&kp SLASH": {t: "-", s: "_"}
+    "&kp NON_US_BSLH": {t: "<", s: ">"}
+
+    # --- ALTGR / KLAMMERN ---
+    "&kp RA(N7)": "{"
+    "&kp RA(N8)": "["
+    "&kp RA(N9)": "]"
+    "&kp RA(N0)": "}"
+    "&kp RA(Q)": "@"
+    "&kp RA(E)": "€"
+    "&kp RA(MINUS)": "\\"
+    "&kp RA(SQT)": "´"
+
+    # --- MAUS & NAVIGATION ---
+    "&mkp LCLK": "🖱️ L"
+    "&mkp RCLK": "🖱️ R"
+    "&kp HOME": "⤒ Pos1"
+    "&kp END": "⤓ Ende"
+    
+    # --- MACROS ---
+    "&smiley": "☺"
+    "&durchmesser": "Ø"
 
 draw_config:
   dark_mode: true
   n_columns: 1
   split_gap: 30.0
-  # Dies ist der magische Schalter für die 2 und das "
-  draw_key_caps: true 
-  # Verhindert, dass der Drawer die Labels selbst zusammenbastelt
+  draw_key_caps: true
   append_minus_to_shifted_label: false
+  key_w: 60.0
+  key_h: 56.0
