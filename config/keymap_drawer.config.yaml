@@ -28,6 +28,16 @@ parse_config:
     "&kp RA(Q)": "@"
     "&kp RA(E)": "€"
     "&kp RA(MINUS)": "\\"
+    "&kp RA(SQT)": "´"
+    
+    # --- DEINE FARB-LOGIK ---
+    # Trigger (Daumen)
+    "&lt 1 TAB": '<tspan fill="red" font-weight="bold">TAB</tspan>'
+    "&lt 1 RET": '<tspan fill="#00e5ff" font-weight="bold">RET</tspan>'
+    
+    # Ziel-Tasten (Navigation)
+    "&kp HOME": '<tspan fill="red" font-weight="bold">⤒ Pos1</tspan>'
+    "&kp END": '<tspan fill="#00e5ff" font-weight="bold">⤓ Ende</tspan>'
     
     # Deine speziellen Macros/Behaviors
     "&smiley": "☺"
@@ -35,8 +45,10 @@ parse_config:
 
 draw_config:
   dark_mode: true
-  n_columns: 1        # Erzwingt, dass jeder Layer eine eigene Zeile bekommt
+  n_columns: 1        # Jeder Layer bekommt eine eigene Zeile
   split_gap: 30.0     # Lücke zwischen linker und rechter Hälfte
-  key_w: 60.0         # Optional: Macht die Tasten etwas breiter
-  key_h: 56.0         # Optional: Macht die Tasten etwas höher
-  fontsize: 10        # Optional: Schrifteinstellungen
+  key_w: 60.0         
+  key_h: 56.0         
+  fontsize: 10        
+  # Umrandung der aktuell aktiven Layer-Taste (standardmäßig rot)
+  held_key_style: "fill: #333; stroke: red; stroke-width: 2;"
