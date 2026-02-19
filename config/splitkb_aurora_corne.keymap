@@ -7,6 +7,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    /* MATRIX-ANPASSUNG FÜR 5 SPALTEN */
+    chosen {
+        zmk,matrix_transform = &five_column_transform;
+    };
+
+/ {
     /* TRI-LAYER LOGIK */
     conditional_layers {
         compatible = "zmk,conditional-layers";
