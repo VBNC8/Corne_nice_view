@@ -5,15 +5,13 @@
 
 
 
-&spi0 {
-    status = "okay";
-
-    /* Der nice_view_adapter mappt das Display auf diesen Knoten */
-    nice_view: ls0xx@0 {
-        compatible = "sharp,ls0xx";
-        reg = <0>; /* Chip select 0 */
-        spi-max-frequency = <1000000>;
-        /* 0 = hochkant, 1 = 90° im Uhrzeigersinn (Landscape) */
-        transform-rotation = <1>;
+/ {
+    chosen {
+        zephyr,display = &nice_view;
     };
+};
+
+/* Falls das Label nice_view oben nicht geht, nehmen wir den Pfad */
+&{/soc/spi@40003000/ls0xx@0} {
+    transform-rotation = <1>;
 };
