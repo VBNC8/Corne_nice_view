@@ -1,17 +1,14 @@
-&spi0 {
-    status = "okay";
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
-};
-
-
+// Wir lassen die SPI-Definition weg, da das Shield das übernimmt.
 
 / {
     chosen {
+        // Das Shield definiert das Display als "nice_view"
         zephyr,display = &nice_view;
     };
 };
 
-/* Falls das Label nice_view oben nicht geht, nehmen wir den Pfad */
-&{/soc/spi@40003000/ls0xx@0} {
-    transform-rotation = <1>;
+// Falls du das Display drehen willst, nutzen wir das Label des Shields
+&nice_view {
+    status = "okay";
+    // Falls die Anzeige auf dem Kopf steht, hier mit <0>, <90>, <180>, <270> spielen
 };
