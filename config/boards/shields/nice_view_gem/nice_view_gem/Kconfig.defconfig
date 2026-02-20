@@ -1,4 +1,11 @@
 if SHIELD_NICE_VIEW_GEM
     config ZMK_DISPLAY
         default y
+
+    # Das hier zwingt die Grafik-Abhängigkeiten rein, ohne dass die .conf meckert
+    config LV_Z_VDB_CUSTOM
+        default y
+    
+    config LV_VDB_SIZE
+        default 64
 endif
