@@ -2,16 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mageslayer
-      url-base: https://github.com/MageSlayer
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: nice-view-gem
-      remote: mageslayer
+      url: https://github.com/MageSlayer/nice-view-gem # <--- Volle URL statt Remote
       revision: main
-      path: modules/nice-view-gem  # <--- Diesen Pfad explizit angeben!
   self:
     path: config
