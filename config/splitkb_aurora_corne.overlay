@@ -1,14 +1,11 @@
-// Wir lassen die SPI-Definition weg, da das Shield das übernimmt.
-
 / {
     chosen {
-        // Das Shield definiert das Display als "nice_view"
         zephyr,display = &nice_view;
     };
 };
 
-// Falls du das Display drehen willst, nutzen wir das Label des Shields
+// Falls &nice_view nicht erkannt wird, versuche es über den Alias 
+// (dieser wird erst später aufgelöst und ist weniger fehleranfällig)
 &nice_view {
-    status = "okay";
-    // Falls die Anzeige auf dem Kopf steht, hier mit <0>, <90>, <180>, <270> spielen
+    transform-rotation = <1>; // 90 Grad
 };
