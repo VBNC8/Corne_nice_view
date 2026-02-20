@@ -1,11 +1,1 @@
 
-/ {
-    chosen {
-        zephyr,display = &{/soc/spi@40003000/ls0xx@0};
-    };
-};
-
-&{/soc/spi@40003000/ls0xx@0} {
-    status = "okay";
-    transform-rotation = <1>; // <1> für 90°, <2> für 180°, <3> für 270°
-};
