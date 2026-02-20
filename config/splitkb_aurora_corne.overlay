@@ -1,10 +1,1 @@
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
 
-/* Wir nutzen den Pfad statt des Labels, um 'undefined node label' zu umgehen */
-&{/soc/spi@40003000/ls0xx@0} {
-    transform-rotation = <1>; // 0 = Normal, 1 = 90°, 2 = 180°, 3 = 270°
-};
