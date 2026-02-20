@@ -1,1 +1,17 @@
+&spi0 {
+    status = "okay";
+};
 
+/ {
+    chosen {
+        zmk,display = &{/soc/spi@40003000/ls0xx@0};
+    };
+};
+
+/* Wir sprechen das Gerät direkt über den Pfad an, um Label-Fehler zu umgehen */
+&{/soc/spi@40003000/ls0xx@0} {
+    status = "okay";
+    /* Wir tauschen 160x68 gegen 68x160 aus */
+    width = <68>;
+    height = <160>;
+};
