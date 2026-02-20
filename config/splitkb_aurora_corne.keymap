@@ -93,20 +93,20 @@
 
         raise_layer {
             bindings = <
-&kp RA(Q)    &kp RA(E)   &trans     &trans     &trans          &trans    &kp LBKT      &kp RA(MINUS) &kp SEMI  &kp RPAR
-&kp SQT      &kp MINUS   &mkp RCLK  &mkp LCLK  &durchmesser    &kp UP    &kp LEFT      &kp DOWN      &kp RIGHT &kp RBKT
-&kp RA(SQT)  &trans      &trans     &trans     &trans          &kp UNDER &kp PLUS      &trans        &trans    &kp RA(RBKT)
-                         &smiley    &trans     &trans          &trans    &trans        &trans
+&kp RA(Q)    &kp RA(E)   &trans     &trans     &trans          &trans     &kp LBKT      &kp RA(MINUS) &kp SEMI  &kp RPAR
+&kp SQT      &kp MINUS   &mkp RCLK  &mkp LCLK  &durchmesser    &kp UP     &kp LEFT      &kp DOWN      &kp RIGHT &kp RBKT
+&kp RA(SQT)  &trans      &trans     &trans     &trans          &kp UNDER  &kp PLUS      &trans        &trans    &kp RA(RBKT)
+                         &smiley    &trans     &trans          &trans     &trans        &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         adjust_layer {
             bindings = <
-&out OUT_BLE     &kp F2            &trans           &kp F4        &kp F5               &trans           &trans      &trans      &trans      &trans
-&bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_CLR           &trans           &trans      &trans      &trans      &trans
-&out OUT_USB     &ext_power EP_TOG &ext_power EP_ON &trans        &trans               &trans           &trans      &kp C_PREV  &kp C_NEXT  &trans
-                                   &kp F10          &trans        &trans               &trans           &trans      &trans
+&out OUT_BLE     &kp F2             &trans            &kp F4        &kp F5               &trans           &trans      &trans      &trans      &trans
+&bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_CLR           &trans           &trans      &trans      &trans      &trans
+&out OUT_USB     &ext_power EP_TOG  &ext_power EP_ON  &trans        &trans               &trans           &trans      &kp C_PREV  &kp C_NEXT  &trans
+                                    &kp F10           &trans        &trans               &trans           &trans      &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
