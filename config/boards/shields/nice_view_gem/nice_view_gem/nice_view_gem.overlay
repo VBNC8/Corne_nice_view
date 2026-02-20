@@ -3,8 +3,8 @@
         compatible = "sharp,ls0xx";
         reg = <0>;
         spi-max-frequency = <1000000>;
-        width = <160>;   /* Tausche width und height */
-        height = <68>;
+        width = <160>;
+        height = <160>; /* Wir lügen den Treiber an, damit die Mathematik stimmt */
     };
 };
 
