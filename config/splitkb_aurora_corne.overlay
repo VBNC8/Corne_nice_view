@@ -1,5 +1,1 @@
-&{/soc/spi@40003000/ls0xx@0} {
-    status = "okay";
-    /* Invertiert die Farben: 0 für normal, 1 für invertiert */
-    inverted; 
-};
+
