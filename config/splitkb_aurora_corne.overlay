@@ -1,1 +1,23 @@
+/* Wir löschen die alte Definition des Displays, um Konflikte zu vermeiden */
+/delete-node/ &nice_view;
 
+&spi0 {
+    status = "okay";
+
+    /* Wir definieren das Display neu mit der gewünschten Rotation */
+    nice_view: ls0xx@0 {
+        compatible = "sharp,ls0xx";
+        reg = <0>;
+        spi-max-frequency = <1000000>;
+        /* Probiere 90 oder 270 */
+        rotation = <270>;
+        width = <160>;
+        height = <68>;
+    };
+};
+
+/ {
+    chosen {
+        zmk,display = &nice_view;
+    };
+};
