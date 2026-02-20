@@ -1,1 +1,5 @@
 
+&nice_view_spi {
+    /* Probiere 0, 90, 180 oder 270 */
+    rotation = <90>;
+};
