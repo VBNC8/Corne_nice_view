@@ -1,9 +1,14 @@
-# In der west.yml
-projects:
-  - name: zmk
-    remote: zmkfirmware
-    revision: main
-    import: app/west.yml
-  - name: nice-view-gem
-    url: https://github.com/MageSlayer/nice-view-gem
-    revision: main
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: nice-view-gem
+      url: https://github.com/MageSlayer/nice-view-gem
+      revision: main
+  self:
+    path: config
