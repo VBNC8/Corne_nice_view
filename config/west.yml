@@ -10,5 +10,6 @@ manifest:
     - name: nice-view-gem
       url: https://github.com/M165437/nice-view-gem
       revision: main
+      zmk-module: true
   self:
     path: config
