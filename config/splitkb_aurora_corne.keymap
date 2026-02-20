@@ -95,7 +95,7 @@
             bindings = <
 &kp RA(Q)    &kp RA(E)   &trans     &trans     &trans          &trans     &kp LBKT      &kp RA(MINUS) &kp SEMI  &kp RPAR
 &kp SQT      &kp MINUS   &mkp RCLK  &mkp LCLK  &durchmesser    &kp UP     &kp LEFT      &kp DOWN      &kp RIGHT &kp RBKT
-&kp RA(SQT)  &trans      &trans     &trans     &trans          &kp UNDER  &kp PLUS      &trans        &trans    &kp RA(RBKT)
+&kp RA(SQT)  &trans      &trans     &trans     &trans          &trans     &kp PLUS      &trans        &trans    &kp RA(RBKT)
                          &smiley    &trans     &trans          &trans     &trans        &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
