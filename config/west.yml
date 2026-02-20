@@ -2,13 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mageslayer # Neu hinzufügen
+    - name: mageslayer
       url-base: https://github.com/MageSlayer
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: main        # <--- ZMK auf aktuellstem Stand
       import: app/west.yml
-    - name: nice-view-gem # Neu hinzufügen
+    - name: nice-view-gem
       remote: mageslayer
-      revision: main
+      revision: main        # <--- Gem passend zu ZMK main
+  self:
+    path: config
