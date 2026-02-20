@@ -59,7 +59,7 @@ layers:
   - {t: '9', s: )}
   - {t: '0', s: '='}
   - {t: <, s: '>'}
-  - Sft+|
+  - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
