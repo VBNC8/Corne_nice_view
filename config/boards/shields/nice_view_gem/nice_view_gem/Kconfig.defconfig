@@ -2,12 +2,12 @@ if SHIELD_NICE_VIEW_GEM
     config ZMK_DISPLAY
         default y
 
-    # Diese Werte zwingen den Treiber auf das richtige Format
+    # Erzwinge die Treiber-Werte
     config LS0XX_DRV_WIDTH
         default 160
 
     config LS0XX_DRV_HEIGHT
-        default 68
+        default 160
 
     config LV_Z_VDB_CUSTOM
         default y
@@ -15,6 +15,7 @@ if SHIELD_NICE_VIEW_GEM
     config LV_VDB_SIZE
         default 64
 
+    # Rotation für die vertikale Ansicht
     config LV_Z_ROTATE_90
         default y
 endif
