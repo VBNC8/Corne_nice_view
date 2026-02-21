@@ -1,17 +1,20 @@
 #include <dt-bindings/led/led.h>
 
+/* Wir löschen JEDE mögliche LED-Definition, bevor wir unsere eigene setzen */
+/ {
+    /delete-node/ led_strip;
+};
+
 &spi3 {
     status = "okay";
+    /delete-node/ ws2812@0;
 
-    /* Wir zielen auf den Namen 'ws2812', den das nice_nano_v2 Board-Overlay nutzt */
-    ws2812: ws2812@0 {
+    /* Wir bauen den Knoten komplett neu unter dem Namen, den das System erwartet */
+    led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
         reg = <0>;
         spi-max-frequency = <4000000>;
-
-        /* Hier erzwingen wir die 27 */
-        chain-length = <27>; 
-
+        chain-length = <21>; /* Nur Switches, da Underglow ausgebaut */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
@@ -20,6 +23,6 @@
 
 / {
     chosen {
-        zmk,underglow = &ws2812;
+        zmk,underglow = &led_strip;
     };
 };
