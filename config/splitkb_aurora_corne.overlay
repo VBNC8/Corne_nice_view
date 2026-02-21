@@ -1,20 +1,22 @@
 #include <dt-bindings/led/led.h>
 
-/* Wir löschen JEDE mögliche LED-Definition, bevor wir unsere eigene setzen */
+/* Wir löschen das alte Label komplett, damit es keine Konflikte gibt */
 / {
     /delete-node/ led_strip;
 };
 
 &spi3 {
     status = "okay";
-    /delete-node/ ws2812@0;
 
-    /* Wir bauen den Knoten komplett neu unter dem Namen, den das System erwartet */
-    led_strip: ws2812@0 {
+    /* Wir definieren den Strip an der exakten Adresse neu */
+    ws2812: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
         reg = <0>;
         spi-max-frequency = <4000000>;
-        chain-length = <21>; /* Nur Switches, da Underglow ausgebaut */
+
+        /* Da Underglow gebrückt/ausgebaut: nur Switch-LEDs */
+        chain-length = <21>; 
+
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
@@ -23,6 +25,6 @@
 
 / {
     chosen {
-        zmk,underglow = &led_strip;
+        zmk,underglow = &ws2812;
     };
 };
