@@ -12,5 +12,7 @@ manifest:
     - name: zmk-view
       remote: nickconroy
       revision: main
+      # Hier fügen wir die direkte URL hinzu, um sicherzugehen
+      repo-path: zmk-view 
   self:
     path: config
