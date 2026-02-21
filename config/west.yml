@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: nickconroy
+    - name: zmk-view-repo
       url-base: https://github.com/NickConroy
   projects:
     - name: zmk
@@ -10,9 +10,7 @@ manifest:
       revision: v0.3-branch
       import: app/west.yml
     - name: zmk-view
-      remote: nickconroy
+      remote: zmk-view-repo
       revision: main
-      # Hier fügen wir die direkte URL hinzu, um sicherzugehen
-      repo-path: zmk-view 
   self:
     path: config
