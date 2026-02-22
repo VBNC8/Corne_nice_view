@@ -1,3 +1,9 @@
+/ {
+    chosen {
+        zmk,display = &nice_view;
+    };
+};
+
 &nice_view {
     status = "okay";
     segment-remap;
