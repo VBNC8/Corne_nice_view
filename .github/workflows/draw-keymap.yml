@@ -16,3 +16,9 @@ jobs:
       output_folder: "keymap-drawer"
       config_path: "config/keymap_drawer.config.yaml" # <--- Diese Zeile hinzufügen!
       commit_message: "docs: [keymap-drawer] Symbole und Layout verfeinert"
+
+with:
+      keymap_patterns: "config/*.keymap"
+      output_folder: "keymap-drawer"
+      config_path: "config/keymap_drawer.config.yaml"
+      commit_message: "docs: [keymap-drawer] Symbole und Layout verfeinert"
