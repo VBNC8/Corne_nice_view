@@ -1,6 +1,6 @@
 parse_config:
   raw_binding_map:
-    # --- LAYER TAPS (Mit Farb-Zuweisung via CSS-Klasse) ---
+    # --- WICHTIG: Prüfe ob diese exakt so in deiner .keymap stehen ---
     "&lt 1 TAB": {t: "⇥", s: "Lower", type: "lower_l"}
     "&lt 1 RET": {t: "⏎", s: "Lower", type: "lower_r"}
     "&lt 2 ESC": {t: "⎋", s: "Raise", type: "raise_l"}
@@ -82,33 +82,28 @@ parse_config:
 
 draw_config:
   dark_mode: true
-  n_columns: 1
-  split_gap: 30.0
   draw_key_caps: true
-  append_minus_to_shifted_label: false
   key_w: 60.0
   key_h: 56.0
   
+  # Diese Farben färben die kleinen Layer-Indikatoren oben rechts an den Tasten
   layer_colors:
     lower: "lightcoral"
     raise: "lightblue"
     adjust: "plum"
-    rgb_layer: "limegreen"
 
-append_style: |
-    /* Versucht alle Varianten: Klasse auf Gruppe, Klasse auf Rect, Klasse auf Pfad */
-    .lower_l rect, .lower_l path, rect.lower_l { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
-    .lower_r rect, .lower_r path, rect.lower_r { fill: #b30000 !important; stroke: #b30000 !important; }
-    .raise_l rect, .raise_l path, rect.raise_l { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
-    .raise_r rect, .raise_r path, rect.raise_r { fill: #004d99 !important; stroke: #004d99 !important; }
-    .adjust_style rect, .adjust_style path, rect.adjust_style { fill: #e6ccff !important; stroke: #e6ccff !important; }
+  append_style: |
+    /* 1. Färbe Tasten basierend auf dem Typen, den wir oben vergeben haben */
+    .lower_l rect.key { fill: #ffb3b3 !important; }
+    .lower_r rect.key { fill: #b30000 !important; }
+    .raise_l rect.key { fill: #b3d9ff !important; }
+    .raise_r rect.key { fill: #004d99 !important; }
+    .adjust_style rect.key { fill: #e6ccff !important; }
 
-    /* Textfarbe */
-    .lower_r text, .raise_r text { fill: #ffffff !important; }
+    /* 2. Sicherheits-Netz: Falls 'type' ignoriert wird, nutze die Layer-Klassen des Drawers */
+    /* Das färbt ALLE Tasten im jeweiligen Layer ein (gut zum Testen) */
+    /* .layer-lower rect.key { fill: rgba(240, 128, 128, 0.2) !important; } */
 
-    /* Text-Kontrast erzwingen für dunkle Hintergründe */
-    g.lower_r text, g.raise_r text { fill: #ffffff !important; }
-    
-    /* Schriften-Design */
-    text.main { font-weight: bold; }
-    text.side { font-size: 10px; font-weight: bold; }
+    /* 3. Text-Kontrast */
+    .lower_r text, .raise_r text { fill: white !important; }
+    text.main { font-weight: bold; font-family: sans-serif; }
