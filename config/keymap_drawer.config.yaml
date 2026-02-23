@@ -46,6 +46,8 @@ parse_config:
     "&mkp RCLK": "🖱️ R"
     "&kp HOME": "⤒ Pos1"
     "&kp END": "⤓ Ende"
+    "&kp BSPC": "⌫"
+    "&kp DEL": "⌦"
     
     # --- MACROS ---
     "&smiley": "☺"
@@ -57,9 +59,9 @@ parse_config:
     "&kp RA(N3)": "³"
     
     # --- SYSTEM-STEUERUNG ---
-    "&kp LA(F4)": {t: "Alt+F4", s: "❌ Close"}
-    "&usb_on": {t: "USB", s: "💡 ON"}
-    "&bt_off": {t: "BT", s: "🌙 OFF"}
+    "&kp LA(F4)": {t: "Alt+F4", s: "✕"}
+    "&usb_on": {t: "ψ USB", s: "💡 ON"}  
+    "&bt_off": {t: "ᛒ BT", s: "🌙 OFF"}
     
     # --- MODIFIER FIXES FÜR DIE GRAFIK ---
     "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
