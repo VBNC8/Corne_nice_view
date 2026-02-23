@@ -76,8 +76,8 @@ layers:
   - {t: ▽, type: trans}
   raise:
   - '@'
-  - €
   - {t: ▽, type: trans}
+  - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - RGB BRI
   - RGB SAI
   - RGB HUI
-  - '&bat_check'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
