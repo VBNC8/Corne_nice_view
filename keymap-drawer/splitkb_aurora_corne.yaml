@@ -34,8 +34,8 @@ layers:
   - PP
   - {t: ESC, h: raise}
   - {t: TAB, h: lower}
-  - {t: RET, h: lower}
-  - {t: SPACE, h: raise}
+  - {t: ⏎, s: Lower}
+  - {t: ␣, s: Raise}
   - {t: ⌫, h: adjust}
   lower:
   - {t: ^, s: °}
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - {t: ᛒ BT, s: 🌙 OFF}
+  - {t: ᛒ BT, s: ☀ OFF}
   - ²
   - ³
   - {t: ▽, type: trans}
@@ -122,9 +122,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Alt+F4, s: ✕}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
+  - ᛒ ➊
+  - ᛒ ➋
+  - ᛒ ➂
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
@@ -132,15 +132,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ψ USB, s: 💡 ON}
+  - {t: ψ USB, s: ☀ ON}
   - EP TOG
   - EP ON
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - NEXT
+  - ⏮
+  - ⏭
   - {t: ▽, type: trans}
   - F10
   - {t: ▽, type: trans}
