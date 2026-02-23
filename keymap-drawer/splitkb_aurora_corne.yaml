@@ -122,11 +122,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Alt+F4, s: ✕}
-  - ᛒ ➊
-  - ᛒ ➋
+  - ᛒ ➀
+  - ᛒ ➁
   - ᛒ ➂
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ᛒ ➃
+  - ᛒ ➄
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
