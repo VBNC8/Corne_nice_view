@@ -1,9 +1,9 @@
 parse_config:
   raw_binding_map:
-    # --- LAYER TAPS (Mit Farb-Zuweisung) ---
-    "&lt 1 TAB": {t: "⇥", s: "Lower", type: "lower_l"} 
-    "&lt 1 RET": {t: "⏎", s: "Lower", type: "lower_r"} 
-    "&lt 2 ESC": {t: "⎋", s: "Raise", type: "raise_l"} 
+    # --- LAYER TAPS (Mit Farb-Zuweisung via CSS-Klasse) ---
+    "&lt 1 TAB": {t: "⇥", s: "Lower", type: "lower_l"}
+    "&lt 1 RET": {t: "⏎", s: "Lower", type: "lower_r"}
+    "&lt 2 ESC": {t: "⎋", s: "Raise", type: "raise_l"}
     "&lt_hp 2 SPACE": {t: "␣", s: "Raise", type: "raise_r"}
     "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust", type: "adjust_style"}
 
@@ -11,11 +11,14 @@ parse_config:
     "&kp RET": "⏎"
     "&kp BSPC": "⌫"
     "&kp DEL": "⌦"
-    "&kp HOME": "⤒ Pos1"
-    "&kp END": "⤓ Ende"
+    "&kp TAB": "⇥"
+    "&kp ESC": "⎋"
+    "&kp SPACE": "␣"
     "&kp LGUI": "⊞"
     "&kp GRAVE": {t: "^", s: "°"}
     "&kp PLUS": "`"
+    "&kp HOME": "⤒ Pos1"
+    "&kp END": "⤓ Ende"
 
     # --- ZAHLEN & DEUTSCHE FIXES ---
     "&kp N1": {t: "1", s: "!"}
@@ -43,6 +46,7 @@ parse_config:
     "&kp RA(NON_US_BSLH)": "|"
     "&kp NON_US_HASH": {t: "#", s: "'"}
     "&kp NON_US_BSLH": {t: "<", s: ">"}
+    "&kp SLASH": {t: "-", s: "_"}
 
     # --- MULTIMEDIA & MAUS ---
     "&kp C_PREV": "⏮"
@@ -80,20 +84,28 @@ draw_config:
   dark_mode: true
   n_columns: 1
   split_gap: 30.0
+  draw_key_caps: true
+  append_minus_to_shifted_label: false
   key_w: 60.0
   key_h: 56.0
-  draw_key_caps: true
   
+  layer_colors:
+    lower: "lightcoral"
+    raise: "lightblue"
+    adjust: "plum"
+    rgb_layer: "limegreen"
+
   append_style: |
-    /* Selektiert die Gruppe UND das Rechteck darin */
+    /* Aggressive CSS-Regeln für die Daumentasten-Farben */
     g.lower_l rect.key { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
     g.lower_r rect.key { fill: #b30000 !important; stroke: #b30000 !important; }
     g.raise_l rect.key { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
     g.raise_r rect.key { fill: #004d99 !important; stroke: #004d99 !important; }
     g.adjust_style rect.key { fill: #e6ccff !important; stroke: #e6ccff !important; }
 
-    /* Weißer Text für die dunklen Tasten */
-    g.lower_r text, g.raise_r text { fill: white !important; }
+    /* Text-Kontrast erzwingen für dunkle Hintergründe */
+    g.lower_r text, g.raise_r text { fill: #ffffff !important; }
     
-    /* Optional: Symbole etwas fetter */
+    /* Schriften-Design */
     text.main { font-weight: bold; }
+    text.side { font-size: 10px; font-weight: bold; }
