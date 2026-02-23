@@ -52,9 +52,9 @@ parse_config:
     "&durchmesser": "Ø"
 
     # --- LAYER KEYS ROT FÄRBEN ---
-    "&mo 1": {t: "lower", type: "held"}
-    "&mo 2": {t: "raise", type: "held"}
-    "&mo 3": {t: "adjust", type: "held"}
+    #"&mo 1": {t: "lower", type: "held"}
+    #"&mo 2": {t: "raise", type: "held"}
+    #"&mo 3": {t: "adjust", type: "held"}
 
   draw_config:
     dark_mode: true
