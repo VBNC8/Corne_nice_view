@@ -86,11 +86,25 @@ draw_config:
   key_w: 60.0
   key_h: 56.0
   append_style: |
-    g.key:nth-of-type(32) rect.key { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
-    g.key:nth-of-type(33) rect.key { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
-    g.key:nth-of-type(34) rect.key { fill: #b30000 !important; stroke: #b30000 !important; }
+    /* Wir färben ALLES innerhalb der Gruppe ein (Rechteck und Schatten) */
+    
+    /* Taste 32: Raise Links (Hellblau) */
+    g.key:nth-of-type(32) * { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
+    
+    /* Taste 33: Lower Links (Hellrot) */
+    g.key:nth-of-type(33) * { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
+
+    /* Taste 34: Lower Rechts (Dunkelrot) */
+    g.key:nth-of-type(34) * { fill: #b30000 !important; stroke: #b30000 !important; }
     g.key:nth-of-type(34) text { fill: white !important; }
-    g.key:nth-of-type(35) rect.key { fill: #004d99 !important; stroke: #004d99 !important; }
+
+    /* Taste 35: Raise Rechts (Dunkelblau) */
+    g.key:nth-of-type(35) * { fill: #004d99 !important; stroke: #004d99 !important; }
     g.key:nth-of-type(35) text { fill: white !important; }
-    g.key:nth-of-type(36) rect.key { fill: #e6ccff !important; stroke: #e6ccff !important; }
+
+    /* Taste 36: Adjust (Lila) */
+    g.key:nth-of-type(36) * { fill: #e6ccff !important; stroke: #e6ccff !important; }
+
+    /* Fix für die Legenden (Text soll lesbar bleiben) */
+    g.key text { pointer-events: none; }
     text.main { font-weight: bold; }
