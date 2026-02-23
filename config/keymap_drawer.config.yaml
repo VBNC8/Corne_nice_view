@@ -73,6 +73,7 @@ parse_config:
     "&kp LA(F4)": {t: "Alt+F4", s: "✕"}
     "&usb_on": {t: "ψ USB", s: "☀ ON"}  
     "&bt_off": {t: "ᛒ BT", s: "☀ OFF"}
+    "&kp LGUI": "⊞"
 
     "&bt BT_SEL 0": "ᛒ ➀"
     "&bt BT_SEL 1": "ᛒ ➁"
