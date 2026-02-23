@@ -85,17 +85,24 @@ draw_config:
   key_w: 60.0
   key_h: 56.0
   
-  append_style: |
-    rect.lower_l { fill: #ffb3b3; }
-    rect.lower_r { fill: #b30000; }
-    rect.raise_l { fill: #b3d9ff; }
-    rect.raise_r { fill: #004d99; }
-    rect.adjust_style { fill: #e6ccff; }
-    .lower_r text, .raise_r text { fill: #ffffff !important; }
-    text.side { font-size: 10px; font-weight: bold; }
-    
+  # Farben für die Layer-Hintergründe (die kleinen Labels oben)
   layer_colors:
     lower: "lightcoral"
     raise: "lightblue"
     adjust: "plum"
     rgb_layer: "limegreen"
+
+  # CSS für die spezifischen Tasten-Farben
+  append_style: |
+    /* Wir zielen direkt auf das Rechteck der Taste ab */
+    .lower_l rect.key { fill: #ffb3b3 !important; }
+    .lower_r rect.key { fill: #b30000 !important; }
+    .raise_l rect.key { fill: #b3d9ff !important; }
+    .raise_r rect.key { fill: #004d99 !important; }
+    .adjust_style rect.key { fill: #e6ccff !important; }
+
+    /* Text-Kontrast erzwingen */
+    .lower_r text, .raise_r text { fill: #ffffff !important; }
+    
+    /* Falls du die Umrandung auch färben willst: */
+    .lower_l rect.key { stroke: #ffb3b3; }
