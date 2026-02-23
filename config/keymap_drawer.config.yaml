@@ -95,13 +95,16 @@ draw_config:
     adjust: "plum"
     rgb_layer: "limegreen"
 
-  append_style: |
-    /* Aggressive CSS-Regeln für die Daumentasten-Farben */
-    g.lower_l rect.key { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
-    g.lower_r rect.key { fill: #b30000 !important; stroke: #b30000 !important; }
-    g.raise_l rect.key { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
-    g.raise_r rect.key { fill: #004d99 !important; stroke: #004d99 !important; }
-    g.adjust_style rect.key { fill: #e6ccff !important; stroke: #e6ccff !important; }
+append_style: |
+    /* Versucht alle Varianten: Klasse auf Gruppe, Klasse auf Rect, Klasse auf Pfad */
+    .lower_l rect, .lower_l path, rect.lower_l { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
+    .lower_r rect, .lower_r path, rect.lower_r { fill: #b30000 !important; stroke: #b30000 !important; }
+    .raise_l rect, .raise_l path, rect.raise_l { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
+    .raise_r rect, .raise_r path, rect.raise_r { fill: #004d99 !important; stroke: #004d99 !important; }
+    .adjust_style rect, .adjust_style path, rect.adjust_style { fill: #e6ccff !important; stroke: #e6ccff !important; }
+
+    /* Textfarbe */
+    .lower_r text, .raise_r text { fill: #ffffff !important; }
 
     /* Text-Kontrast erzwingen für dunkle Hintergründe */
     g.lower_r text, g.raise_r text { fill: #ffffff !important; }
