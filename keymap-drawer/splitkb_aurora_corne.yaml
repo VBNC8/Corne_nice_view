@@ -13,23 +13,23 @@ layers:
   - P
   - A
   - S
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - {t: D, s: CTRL}
+  - {t: F, s: SHIFT}
   - G
   - H
-  - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
+  - {t: J, s: SHIFT}
+  - {t: K, s: CTRL}
   - L
   - {t: '-', s: _}
   - Z
-  - {t: X, h: LALT}
+  - {t: X, s: ALT}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - {t: ., h: RALT}
+  - {t: ., s: ALTGR}
   - DEL
   - PP
   - {t: ESC, h: raise}
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   raise:
   - '@'
-  - AltGr+M
+  - µ
   - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,16 +112,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - '&bt_off'
-  - AltGr+2
-  - AltGr+3
+  - {t: BT, s: 🌙 OFF}
+  - ²
+  - ³
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+F4
+  - {t: Alt+F4, s: ❌ Close}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&usb_on'
+  - {t: USB, s: 💡 ON}
   - EP TOG
   - EP ON
   - {t: ▽, type: trans}
