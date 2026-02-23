@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   raise:
   - '@'
-  - {t: ▽, type: trans}
+  - AltGr+M
   - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -113,15 +113,15 @@ layers:
   - {t: ▽, type: trans}
   adjust:
   - '&bt_off'
+  - AltGr+2
+  - AltGr+3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+F4
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
