@@ -74,9 +74,11 @@ parse_config:
     "&usb_on": {t: "ψ USB", s: "☀ ON"}  
     "&bt_off": {t: "ᛒ BT", s: "☀ OFF"}
 
-    "&bt BT_SEL 0": "ᛒ ➊"
-    "&bt BT_SEL 1": "ᛒ ➋"
+    "&bt BT_SEL 0": "ᛒ ➀"
+    "&bt BT_SEL 1": "ᛒ ➁"
     "&bt BT_SEL 2": "ᛒ ➂"
+    "&bt BT_SEL 3": "ᛒ ➃"
+    "&bt BT_SEL 4": "ᛒ ➄"
     
     # --- MODIFIER FIXES FÜR DIE GRAFIK ---
     "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
