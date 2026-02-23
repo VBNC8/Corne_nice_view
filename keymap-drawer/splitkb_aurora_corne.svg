@@ -261,7 +261,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DEL</text>
+<text x="0" y="0" class="key tap">⌦</text>
 </g>
 <g transform="translate(168, 205)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -293,7 +293,7 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BSPC</text>
+<text x="0" y="0" class="key tap">⌫</text>
 <a href="#adjust">
 <text x="0" y="24" class="key hold layer-activator">adjust</text>
 </a></g>
@@ -624,7 +624,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BT</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">ᛒ</tspan><tspan x="0" dy="1.2em">BT</tspan>
+</text>
 <text x="0" y="-24" class="key shifted">🌙 OFF</text>
 </g>
 <g transform="translate(84, 35)" class="key keypos-1">
@@ -662,7 +664,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(700, 49)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Alt+F4</text>
-<text x="0" y="-24" class="key shifted">❌ Close</text>
+<text x="0" y="-24" class="key shifted">✕</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -711,7 +713,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(28, 161)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">USB</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">ψ</tspan><tspan x="0" dy="1.2em">USB</tspan>
+</text>
 <text x="0" y="-24" class="key shifted">💡 ON</text>
 </g>
 <g transform="translate(84, 147)" class="key keypos-21">

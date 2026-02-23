@@ -30,13 +30,13 @@ layers:
   - M
   - ','
   - {t: ., s: ALTGR}
-  - DEL
+  - ⌦
   - PP
   - {t: ESC, h: raise}
   - {t: TAB, h: lower}
   - {t: RET, h: lower}
   - {t: SPACE, h: raise}
-  - {t: BSPC, h: adjust}
+  - {t: ⌫, h: adjust}
   lower:
   - {t: ^, s: °}
   - F2
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - {t: BT, s: 🌙 OFF}
+  - {t: ᛒ BT, s: 🌙 OFF}
   - ²
   - ³
   - {t: ▽, type: trans}
@@ -121,7 +121,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Alt+F4, s: ❌ Close}
+  - {t: Alt+F4, s: ✕}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: USB, s: 💡 ON}
+  - {t: ψ USB, s: 💡 ON}
   - EP TOG
   - EP ON
   - {t: ▽, type: trans}
