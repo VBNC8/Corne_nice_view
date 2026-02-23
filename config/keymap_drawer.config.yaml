@@ -85,29 +85,12 @@ draw_config:
   draw_key_caps: true
   key_w: 60.0
   key_h: 56.0
-  
-append_style: |
-    /* FARBEN FÜR DIE DAUMENTASTEN (3 links, 3 rechts) */
-    
-    /* Taste 31: C_PP (Lassen wir dunkel oder färben sie grau) */
-    g.key:nth-of-type(31) rect.key { fill: #333 !important; }
-
-    /* Taste 32: &lt 2 ESC (Raise Links - Hellblau) */
+  append_style: |
     g.key:nth-of-type(32) rect.key { fill: #b3d9ff !important; stroke: #b3d9ff !important; }
-    
-    /* Taste 33: &lt 1 TAB (Lower Links - Hellrot) */
     g.key:nth-of-type(33) rect.key { fill: #ffb3b3 !important; stroke: #ffb3b3 !important; }
-
-    /* Taste 34: &lt 1 RET (Lower Rechts - Dunkelrot) */
     g.key:nth-of-type(34) rect.key { fill: #b30000 !important; stroke: #b30000 !important; }
     g.key:nth-of-type(34) text { fill: white !important; }
-
-    /* Taste 35: &lt_hp 2 SPACE (Raise Rechts - Dunkelblau) */
     g.key:nth-of-type(35) rect.key { fill: #004d99 !important; stroke: #004d99 !important; }
     g.key:nth-of-type(35) text { fill: white !important; }
-
-    /* Taste 36: &lt_hp 3 BSPC (Adjust - Lila) */
     g.key:nth-of-type(36) rect.key { fill: #e6ccff !important; stroke: #e6ccff !important; }
-
-    /* Text-Design */
     text.main { font-weight: bold; }
