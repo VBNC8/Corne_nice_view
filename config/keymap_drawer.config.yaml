@@ -82,26 +82,36 @@ parse_config:
 
 draw_config:
   dark_mode: true
-  draw_key_caps: true
   append_style: |
-    /* 1. Farben für die Daumentasten erzwingen */
+    /* Die Atom-Bombe gegen das Standard-Grau: Wir selektieren über die Layer-Klasse */
     
-    /* Lower (Rot-Töne) */
-    g.key.lower_l rect, g.key.lower_r rect { fill: #ff4d4d !important; stroke: #ff0000 !important; }
-    g.key.lower_l text, g.key.lower_r text { fill: #ffffff !important; font-weight: bold; }
+    /* LOWER Keys (Rot) */
+    .layer-default g.lower_l rect, .layer-default g.lower_r rect,
+    .layer-lower g.keypos-32 rect, .layer-lower g.keypos-33 rect { 
+        fill: #ef4444 !important; 
+        stroke: #7f1d1d !important; 
+    }
 
-    /* Raise (Blau-Töne) */
-    g.key.raise_l rect, g.key.raise_r rect { fill: #0080ff !important; stroke: #0059b3 !important; }
-    g.key.raise_l text, g.key.raise_r text { fill: #ffffff !important; font-weight: bold; }
+    /* RAISE Keys (Blau) */
+    .layer-default g.raise_l rect, .layer-default g.raise_r rect { 
+        fill: #3b82f6 !important; 
+        stroke: #1e3a8a !important; 
+    }
 
-    /* Adjust (Lila) */
-    g.key.adjust_style rect { fill: #b366ff !important; stroke: #8c1aff !important; }
-    g.key.adjust_style text { fill: #ffffff !important; font-weight: bold; }
+    /* ADJUST Key (Lila) */
+    .layer-default g.adjust_style rect { 
+        fill: #a855f7 !important; 
+        stroke: #581c87 !important; 
+    }
 
-    /* 2. Optionale Layer-Highlights (macht das ganze Board grüner/frischer) */
-    .layer-default rect.key { stroke: #42be65 !important; } /* Grüne Umrandung im Default */
-    
-    /* 3. Text-Korrektur für Lesbarkeit */
-    text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
-    text.tap { fill: #f8f8f2 !important; }
-    text.shifted { fill: #6272a4 !important; }
+    /* Text-Korrektur: Damit man auf den bunten Tasten auch was sieht */
+    g.lower_l text, g.lower_r text, 
+    g.raise_l text, g.raise_r text, 
+    g.adjust_style text { 
+        fill: #ffffff !important; 
+        font-weight: bold !important; 
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* Hintergrund des ganzen SVGs etwas dunkler für Kontrast */
+    svg.keymap { background-color: #111827; border-radius: 10px; }
