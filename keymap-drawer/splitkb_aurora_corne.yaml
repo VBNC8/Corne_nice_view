@@ -106,7 +106,7 @@ layers:
   - {t: ▽, type: trans}
   - '~'
   - ☻
-  - Ctl+Sft+ESC
+  - Task Mgr
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&nbsp'
