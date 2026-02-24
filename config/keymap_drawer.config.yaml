@@ -83,29 +83,25 @@ parse_config:
 draw_config:
   dark_mode: true
   draw_key_caps: true
-  key_w: 60.0
-  key_h: 56.0
   append_style: |
-    /* Lower Links (Hellrot) */
-    .key.lower_l rect { fill: #ffb3b3 !important; stroke: #ff7f7f !important; }
-    .key.lower_l text { fill: #000 !important; }
+    /* 1. Farben für die Daumentasten erzwingen */
+    
+    /* Lower (Rot-Töne) */
+    g.key.lower_l rect, g.key.lower_r rect { fill: #ff4d4d !important; stroke: #ff0000 !important; }
+    g.key.lower_l text, g.key.lower_r text { fill: #ffffff !important; font-weight: bold; }
 
-    /* Lower Rechts (Dunkelrot) */
-    .key.lower_r rect { fill: #b30000 !important; stroke: #800000 !important; }
-    .key.lower_r text { fill: #fff !important; }
-
-    /* Raise Links (Hellblau) */
-    .key.raise_l rect { fill: #b3d9ff !important; stroke: #7fbfff !important; }
-    .key.raise_l text { fill: #000 !important; }
-
-    /* Raise Rechts (Dunkelblau) */
-    .key.raise_r rect { fill: #004d99 !important; stroke: #003366 !important; }
-    .key.raise_r text { fill: #fff !important; }
+    /* Raise (Blau-Töne) */
+    g.key.raise_l rect, g.key.raise_r rect { fill: #0080ff !important; stroke: #0059b3 !important; }
+    g.key.raise_l text, g.key.raise_r text { fill: #ffffff !important; font-weight: bold; }
 
     /* Adjust (Lila) */
-    .key.adjust_style rect { fill: #e6ccff !important; stroke: #b366ff !important; }
-    .key.adjust_style text { fill: #000 !important; }
+    g.key.adjust_style rect { fill: #b366ff !important; stroke: #8c1aff !important; }
+    g.key.adjust_style text { fill: #ffffff !important; font-weight: bold; }
 
-    /* Allgemeine Verschönerung */
-    text.main { font-weight: bold; }
-    .keypos-30 rect { fill: #2d333b !important; } /* Play/Pause Taste dezent dunkel */
+    /* 2. Optionale Layer-Highlights (macht das ganze Board grüner/frischer) */
+    .layer-default rect.key { stroke: #42be65 !important; } /* Grüne Umrandung im Default */
+    
+    /* 3. Text-Korrektur für Lesbarkeit */
+    text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important; }
+    text.tap { fill: #f8f8f2 !important; }
+    text.shifted { fill: #6272a4 !important; }
