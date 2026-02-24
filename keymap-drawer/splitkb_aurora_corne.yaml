@@ -32,11 +32,11 @@ layers:
   - {t: ., s: ALTGR}
   - ⌦
   - ⏯
-  - {t: ⎋, s: Raise, type: raise_l}
-  - {t: ⇥, s: Lower, type: lower_l}
-  - {t: ⏎, s: Lower, type: lower_r}
-  - {t: ␣, s: Raise, type: raise_r}
-  - {t: ⌫, s: Adjust, type: adjust_style}
+  - {t: ⎋, s: Raise}
+  - {t: ⇥, s: Lower}
+  - {t: ⏎, s: Lower}
+  - {t: ␣, s: Raise}
+  - {t: ⌫, s: Adjust}
   lower:
   - {t: ^, s: °}
   - F2
