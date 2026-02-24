@@ -59,11 +59,11 @@ parse_config:
     # --- SYSTEM & BT ---
     "&usb_on": {t: "ψ USB", s: "☀ ON"}  
     "&bt_off": {t: "$$mdi:bluetooth$$", s: "☀ OFF"}
-    "&bt BT_SEL 0": "$$mdi:bluetooth$$ ⓵"
-    "&bt BT_SEL 1": "$$mdi:bluetooth$$ ⓶"
-    "&bt BT_SEL 2": "$$mdi:bluetooth$$ ⓷"
-    "&bt BT_SEL 3": "$$mdi:bluetooth$$ ⓸"
-    "&bt BT_SEL 4": "$$mdi:bluetooth$$ ⓹"
+    "&bt BT_SEL 0": {t: "$$mdi:bluetooth$$", s: "⓵"}
+    "&bt BT_SEL 1": {t: "$$mdi:bluetooth$$", s: "⓶"}
+    "&bt BT_SEL 2": {t: "$$mdi:bluetooth$$", s: "⓷"}
+    "&bt BT_SEL 3": {t: "$$mdi:bluetooth$$", s: "⓸"}
+    "&bt BT_SEL 4": {t: "$$mdi:bluetooth$$", s: "⓹"}
     "&kp LA(F4)": {t: "✕", s: "Alt F4"}
 
     # --- MAKROS & SPEZIAL ---
