@@ -14,7 +14,7 @@ parse_config:
     "&kp TAB": "⇥"
     "&kp ESC": "⎋"
     "&kp SPACE": "␣"
-    "&kp LGUI": "⊞"
+    "&kp LGUI": "$$mdi:microsoft-windows-classic$$"
     "&kp GRAVE": {t: "^", s: "°"}
     "&kp PLUS": "`"
     "&kp HOME": "⤒ Pos1"
