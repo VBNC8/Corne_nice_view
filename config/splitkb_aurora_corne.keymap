@@ -72,38 +72,6 @@
                 , <&macro_release &kp LALT>;
         };
 
-        // Kleiner-Gleich (≤) -> Alt + 08804
-        lte: lte {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N4>, 
-                       <&macro_release &kp LALT>;
-        };
-
-        // Größer-Gleich (≥) -> Alt + 08805
-        gte: gte {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N5>, 
-                       <&macro_release &kp LALT>;
-        };
-
-        // Ungleich (≠) -> Alt + 08800
-        not_eq: not_eq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N0>, 
-                       <&macro_release &kp LALT>;
-        };
     };
 
     behaviors {
@@ -161,7 +129,7 @@
 
         raise_layer {
             bindings = <
-&kp RA(Q)    &kp RA(M)   &kp RA(E)  &lte              &gte                 &not_eq    &kp LBKT      &kp RA(MINUS)  &kp SEMI  &kp RPAR
+&kp RA(Q)    &kp RA(M)   &kp RA(E)  &trans            &trans               &trans     &kp LBKT      &kp RA(MINUS)  &kp SEMI  &kp RPAR
 &kp SQT      &kp MINUS   &mkp RCLK  &mkp LCLK         &durchmesser         &kp UP     &kp LEFT      &kp DOWN       &kp RIGHT &kp RBKT
 &kp RA(SQT)  &trans      &trans     &trans            &trans               &trans     &kp PLUS      &trans         &trans    &kp RA(RBKT)
                          &smiley    &kp LC(LS(ESC))   &trans               &trans     &nbsp         &trans
