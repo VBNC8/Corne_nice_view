@@ -84,7 +84,7 @@ layers:
   - Ü
   - \
   - Ö
-  - )
+  - '='
   - Ä
   - {t: ß, s: '?'}
   - 🖱 RMB
@@ -94,7 +94,7 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - ']'
+  - {t: +, s: '*'}
   - ´
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
