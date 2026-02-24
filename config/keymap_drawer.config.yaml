@@ -1,5 +1,16 @@
 parse_config:
   raw_binding_map:
+    "&lt 1 TAB": {t: "⇥", s: "Lower", type: "held"}
+    "&lt 1 RET": {t: "↵", s: "Lower", type: "held"}
+    "&lt 2 ESC": {t: "ESC", s: "Raise", type: "held"}
+    "&lt_hp 2 SPACE": {t: "␣", s: "Raise", type: "held"}
+    "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust", type: "held"}
+    
+    # Für reine Layer-Tasten ohne Tap-Funktion (falls vorhanden):
+    "&mo 1": {t: "Lower", type: "held"}
+    "&mo 2": {t: "Raise", type: "held"}
+    "&mo 3": {t: "Adjust", type: "held"}
+    
     "Lower": {t: "Lower", type: "held"}
     "Raise": {t: "Raise", type: "held"}
     "Adjust": {t: "Adjust", type: "held"}
