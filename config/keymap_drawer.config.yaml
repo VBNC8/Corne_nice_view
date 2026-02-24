@@ -2,7 +2,7 @@ parse_config:
   raw_binding_map:
     # --- WICHTIG: Prüfe ob diese exakt so in deiner .keymap stehen ---
     "&lt 1 TAB": {t: "⇥", s: "Lower"}
-    "&lt 1 RET": {t: "⏎", s: "Lower"}
+    "&lt 1 RET": {t: "↵", s: "Lower"}
     "&lt 2 ESC": {t: "ESC", s: "Raise"}
     "&lt_hp 2 SPACE": {t: "␣", s: "Raise"}
     "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust"}
