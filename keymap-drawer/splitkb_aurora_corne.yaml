@@ -113,8 +113,8 @@ layers:
   - {t: ▽, type: trans}
   adjust:
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
-  - ²
-  - ³
+  - '  ²'
+  - '  ³'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
