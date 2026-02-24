@@ -1,85 +1,18 @@
 parse_config:
   raw_binding_map:
-    # --- WICHTIG: Prüfe ob diese exakt so in deiner .keymap stehen ---
-    "&lt 1 TAB": {t: "⇥", s: "Lower"}
-    "&lt 1 RET": {t: "⏎", s: "Lower"}
-    "&lt 2 ESC": {t: "ESC", s: "Raise"}
-    "&lt_hp 2 SPACE": {t: "␣", s: "Raise"}
-    "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust"}
-
-    # --- EINGABE & NAVIGATION ---
-    "&kp RET": "⏎"
-    "&kp BSPC": "⌫"
-    "&kp DEL": "⌦"
-    "&kp TAB": "⇥"
-    "&kp ESC": "⎋"
-    "&kp SPACE": "␣"
-    "&kp LGUI": "⊞"
-    "&kp GRAVE": {t: "^", s: "°"}
-    "&kp PLUS": "`"
-    "&kp HOME": "⤒ Pos1"
-    "&kp END": "⤓ End"
-
-    # --- ZAHLEN & DEUTSCHE FIXES ---
-    "&kp N1": {t: "1", s: "!"}
-    "&kp N2": {t: "2", s: "\""}
-    "&kp N3": {t: "3", s: "§"}
-    "&kp N4": {t: "4", s: "$"}
-    "&kp N5": {t: "5", s: "%"}
-    "&kp N6": {t: "6", s: "&"}
-    "&kp N7": {t: "7", s: "/"}
-    "&kp N8": {t: "8", s: "("}
-    "&kp N9": {t: "9", s: ")"}
-    "&kp N0": {t: "0", s: "="}
-    "&kp MINUS": {t: "ß", s: "?"}
-    "&kp SEMI": "Ö"
-    "&kp SQT": "Ä"
-    "&kp LBKT": "Ü"
-    "&kp RA(N7)": "{"
-    "&kp RA(N8)": "["
-    "&kp RA(N9)": "]"
-    "&kp RA(N0)": "}"
-    "&kp RA(Q)": "@"
-    "&kp RA(E)": "€"
-    "&kp RA(MINUS)": "\\"
-    "&kp RA(SQT)": "´"
-    "&kp RA(NON_US_BSLH)": "|"
-    "&kp RA(RBKT)": "~"
-    "&kp NON_US_HASH": {t: "#", s: "'"}
-    "&kp NON_US_BSLH": {t: "<", s: ">"}
-    "&kp SLASH": {t: "-", s: "_"}
-
-    # --- MULTIMEDIA & MAUS ---
-    "&kp C_PREV": "⏮"
-    "&kp C_NEXT": "⏭"
-    "&kp C_PP": "⏯"
-    "&mkp LCLK": "🖱 L"
-    "&mkp RCLK": "🖱 R"
+    # ... (Rest wie gehabt)
 
     # --- SYSTEM & BT ---
     "&usb_on": {t: "ψ USB", s: "☀ ON"}  
-    "&bt_off": {t: "ᛒ BT", s: "☀ OFF"}
-    "&bt BT_SEL 0": "ᛒ ➁""
-    "&bt BT_SEL 1": "ᛒ ➁"
-    "&bt BT_SEL 2": "ᛒ ➂"
-    "&bt BT_SEL 3": "ᛒ ➃"
-    "&bt BT_SEL 4": "ᛒ ➄"
+    "&bt_off": {t: "$$bt$$", s: "OFF"}
+    "&bt BT_SEL 0": "$$bt$$ ➀"
+    "&bt BT_SEL 1": "$$bt$$ ➁"
+    "&bt BT_SEL 2": "$$bt$$ ➂"
+    "&bt BT_SEL 3": "$$bt$$ ➃"
+    "&bt BT_SEL 4": "$$bt$$ ➄"
     "&kp LA(F4)": {t: "✕", s: "Alt F4"}
-    
-    # --- MAKROS & SPEZIAL ---
-    "&smiley": "☻"
-    "&durchmesser": "Ø"
-    "&kp RA(M)": "µ"
-    "&kp RA(N2)": "²"
-    "&kp RA(N3)": "³"
 
-    # --- MODIFIER FIXES ---
-    "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
-    "&hrm_shift LSHIFT F": {t: "F", s: "Shift"}
-    "&hrm_shift RSHIFT J": {t: "J", s: "Shift"}
-    "&hrm_safe RCTRL K": {t: "K", s: "CTRL"}
-    "&hrm_safe LALT X": {t: "X", s: "Alt"}
-    "&hrm_safe RALT DOT": {t: ".", s: "AltGr"}
+    # ... (Rest wie gehabt)
 
 draw_config:
   dark_mode: true
@@ -92,7 +25,3 @@ draw_config:
   glyphs:
     bt: |
       <path d="M10.394 2.813a.5.5 0 0 0-.457.075L4.722 6.252a.5.5 0 0 0 0 .814l4.673 3.437-4.673 3.437a.5.5 0 0 0 0 .814l5.215 3.831a.5.5 0 0 0 .805-.407v-6.046l4.234 3.114a.5.5 0 0 0 .592-.807L10.966 10l4.575-3.364a.5.5 0 0 0-.592-.807L10.715 8.943V3.22a.5.5 0 0 0-.321-.407zM11.715 4.74l3.057 2.247-3.057 2.247V4.74zM11.715 15.26V10.767l3.057 2.247-3.057 2.247z""")/>>
-
-
-
-
