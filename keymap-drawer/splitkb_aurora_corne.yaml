@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - {t: $$bt$$, s: 'OFF'}
+  - {t: '$$mdi:bluetooth-off$$', s: 'OFF'}
   - AltGr+2
   - AltGr+3
   - {t: ▽, type: trans}
@@ -122,11 +122,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ✕, s: Alt F4}
-  - $$bt$$ ➀
-  - $$bt$$ ➁
-  - $$bt$$ ➂
-  - $$bt$$ ➃
-  - $$bt$$ ➄
+  - $$mdi:bluetooth$$ 1
+  - $$mdi:bluetooth$$ 2
+  - $$mdi:bluetooth$$ 3
+  - $$mdi:bluetooth$$ 4
+  - $$mdi:bluetooth$$ 5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
