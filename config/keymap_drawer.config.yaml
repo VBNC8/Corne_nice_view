@@ -3,7 +3,7 @@ parse_config:
     # --- WICHTIG: Prüfe ob diese exakt so in deiner .keymap stehen ---
     "&lt 1 TAB": {t: "⇥", s: "Lower"}
     "&lt 1 RET": {t: "⏎", s: "Lower"}
-    "&lt 2 ESC": {t: "⎋", s: "Raise"}
+    "&lt 2 ESC": {t: "ESC", s: "Raise"}
     "&lt_hp 2 SPACE": {t: "␣", s: "Raise"}
     "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust"}
 
@@ -18,7 +18,7 @@ parse_config:
     "&kp GRAVE": {t: "^", s: "°"}
     "&kp PLUS": "`"
     "&kp HOME": "⤒ Pos1"
-    "&kp END": "⤓ Ende"
+    "&kp END": "⤓ End"
 
     # --- ZAHLEN & DEUTSCHE FIXES ---
     "&kp N1": {t: "1", s: "!"}
@@ -75,11 +75,11 @@ parse_config:
 
     # --- MODIFIER FIXES ---
     "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
-    "&hrm_shift LSHIFT F": {t: "F", s: "SHIFT"}
-    "&hrm_shift RSHIFT J": {t: "J", s: "SHIFT"}
+    "&hrm_shift LSHIFT F": {t: "F", s: "Shift"}
+    "&hrm_shift RSHIFT J": {t: "J", s: "Shift"}
     "&hrm_safe RCTRL K": {t: "K", s: "CTRL"}
-    "&hrm_safe LALT X": {t: "X", s: "ALT"}
-    "&hrm_safe RALT DOT": {t: ".", s: "ALTGR"}
+    "&hrm_safe LALT X": {t: "X", s: "Alt"}
+    "&hrm_safe RALT DOT": {t: ".", s: "AltGr"}
 
 draw_config:
   dark_mode: true
