@@ -92,28 +92,21 @@ draw_config:
   split_gap: 30
   draw_key_caps: true
   
-  # Hier definieren wir die Farben NATIV für das Tool
-  style_overrides:
-    held: {fill: "#854747", stroke: "#b91c1c"} # Das "Aurora-Rot" für deine Layer-Keys
-
   append_style: |
-    /* Damit die Daumentasten auf JEDEM Layer rot leuchten */
-    /* Wir sprechen sie direkt über ihre Position an */
-    
-    /* Linker Daumen (31, 32) & Rechter Daumen (33, 34, 35) */
-    .keypos-31 rect, .keypos-32 rect, 
-    .keypos-33 rect, .keypos-34 rect, .keypos-35 rect {
-        fill: #854747 !important;
-        stroke: #b91c1c !important;
-    }
+    /* 1. Die Standard "held" Farbe (Rot) */
+    rect.held { fill: #854747 !important; stroke: #b91c1c !important; }
+    text.held { fill: white !important; }
 
-    /* Text-Korrektur für die roten Tasten */
-    .keypos-31 text, .keypos-32 text, 
-    .keypos-33 text, .keypos-34 text, .keypos-35 text {
-        fill: #ffffff !important;
-        font-weight: bold;
-    }
+    /* 2. Spezifische Farben basierend auf dem Text (Sicherheits-Netz) */
+    /* Lower = Grün-Blau */
+    g:has(text:nth-of-type(1):-mocha-content("Lower")) rect,
+    g:has(text:-mocha-content("Lower")) rect { fill: #3a5a5a !important; }
 
-    /* Optionale Layer-Akzente (falls gewünscht) */
-    #lower rect.key { stroke: #4ade80; } /* Ein grüner Rahmen für Lower */
-    #raise rect.key { stroke: #60a5fa; } /* Ein blauer Rahmen für Raise */
+    /* Raise = Blau-Violett */
+    g:has(text:-mocha-content("Raise")) rect { fill: #3a4a6a !important; }
+
+    /* Adjust = Lila */
+    g:has(text:-mocha-content("Adjust")) rect { fill: #5a3a6a !important; }
+
+    /* RGB = Gold/Gelb */
+    #rgb rect.key { stroke: #ffd700 !important; stroke-width: 2; }
