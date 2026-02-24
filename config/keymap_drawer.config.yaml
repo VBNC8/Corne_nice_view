@@ -96,6 +96,10 @@ parse_config:
 
 draw_config:
   dark_mode: true
+  mapped_symbols:
+    "Raise": {t: "Raise", type: "held"}
+    "Lower": {t: "Lower", type: "held"}
+    "Adjust": {t: "Adjust", type: "held"}
   n_columns: 1
   split_gap: 30.0
   draw_key_caps: true
