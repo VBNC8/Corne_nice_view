@@ -78,9 +78,9 @@ layers:
   - '@'
   - µ
   - €
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ≤
+  - ≥
+  - ≠
   - Ü
   - \
   - Ö
@@ -109,7 +109,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&nbsp'
   - {t: ▽, type: trans}
   adjust:
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
