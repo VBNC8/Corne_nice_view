@@ -53,8 +53,8 @@ parse_config:
     "&kp C_PREV": "⏮"
     "&kp C_NEXT": "⏭"
     "&kp C_PP": "⏯"
-    "&mkp LCLK": "🖱 L"
-    "&mkp RCLK": "🖱 R"
+    "&mkp LCLK": "🖱 LMB"
+    "&mkp RCLK": "🖱 RMB"
 
     # --- SYSTEM & BT ---
     "&usb_on": {t: "ψ USB", s: "☀ ON"}  
