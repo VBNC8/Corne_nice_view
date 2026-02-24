@@ -93,20 +93,17 @@ draw_config:
   draw_key_caps: true
   
   append_style: |
-    /* 1. Die Standard "held" Farbe (Rot) */
-    rect.held { fill: #854747 !important; stroke: #b91c1c !important; }
-    text.held { fill: white !important; }
+    /* Diese Regel färbt die Daumentasten auf JEDEM Layer rot ein */
+    .keypos-31 rect, .keypos-32 rect, .keypos-33 rect, .keypos-34 rect, .keypos-35 rect {
+        fill: #854747 !important;
+        stroke: #b91c1c !important;
+    }
+    
+    /* Text auf diesen Tasten weiß und fett für bessere Lesbarkeit */
+    .keypos-31 text, .keypos-32 text, .keypos-33 text, .keypos-34 text, .keypos-35 text {
+        fill: white !important;
+        font-weight: bold;
+    }
 
-    /* 2. Spezifische Farben basierend auf dem Text (Sicherheits-Netz) */
-    /* Lower = Grün-Blau */
-    g:has(text:nth-of-type(1):-mocha-content("Lower")) rect,
-    g:has(text:-mocha-content("Lower")) rect { fill: #3a5a5a !important; }
-
-    /* Raise = Blau-Violett */
-    g:has(text:-mocha-content("Raise")) rect { fill: #3a4a6a !important; }
-
-    /* Adjust = Lila */
-    g:has(text:-mocha-content("Adjust")) rect { fill: #5a3a6a !important; }
-
-    /* RGB = Gold/Gelb */
-    #rgb rect.key { stroke: #ffd700 !important; stroke-width: 2; }
+    /* Markiert den aktiven Layer-Namen oben links farbig (optional) */
+    text.label { fill: #f87171 !important; }
