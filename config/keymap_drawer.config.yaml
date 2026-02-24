@@ -1,12 +1,11 @@
 parse_config:
   raw_binding_map:
+    # --- LAYER KEYS MIT HIGHLIGHT (HELD) ---
     "&lt 1 TAB": {t: "⇥", s: "Lower", type: "held"}
     "&lt 1 RET": {t: "↵", s: "Lower", type: "held"}
     "&lt 2 ESC": {t: "ESC", s: "Raise", type: "held"}
     "&lt_hp 2 SPACE": {t: "␣", s: "Raise", type: "held"}
     "&lt_hp 3 BSPC": {t: "⌫", s: "Adjust", type: "held"}
-    
-    # Für reine Layer-Tasten ohne Tap-Funktion (falls vorhanden):
     "&mo 1": {t: "Lower", type: "held"}
     "&mo 2": {t: "Raise", type: "held"}
     "&mo 3": {t: "Adjust", type: "held"}
@@ -107,10 +106,6 @@ parse_config:
 
 draw_config:
   dark_mode: true
-  mapped_symbols:
-    "Raise": {t: "Raise", type: "held"}
-    "Lower": {t: "Lower", type: "held"}
-    "Adjust": {t: "Adjust", type: "held"}
   n_columns: 1
   split_gap: 30.0
   draw_key_caps: true
