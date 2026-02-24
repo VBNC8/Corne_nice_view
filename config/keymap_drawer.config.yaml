@@ -82,14 +82,9 @@ parse_config:
 
 draw_config:
   dark_mode: true
-  append_style: |
-    /* Zwingt die Daumentasten auf Rot, egal was das Tool denkt */
-    /* Wir nehmen die Positionen 31, 32, 33, 34 (deine Daumen) */
-    .keypos-31 rect, .keypos-32 rect, .keypos-33 rect, .keypos-34 rect {
-        fill: #f87171 !important;
-        stroke: #b91c1c !important;
-    }
-    /* Text auf diesen Tasten weiß machen für bessere Lesbarkeit */
-    .keypos-31 text, .keypos-32 text, .keypos-33 text, .keypos-34 text {
-        fill: white !important;
-    }
+  n_columns: 1
+  split_gap: 30.0
+  draw_key_caps: true
+  append_minus_to_shifted_label: false
+  key_w: 60.0
+  key_h: 56.0
