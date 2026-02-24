@@ -13,32 +13,32 @@ layers:
   - P
   - A
   - S
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - {t: D, s: CTRL}
+  - {t: F, s: Shift}
   - G
   - H
-  - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
+  - {t: J, s: Shift}
+  - {t: K, s: CTRL}
   - L
-  - /
+  - {t: '-', s: _}
   - Z
-  - {t: X, h: LALT}
+  - {t: X, s: Alt}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - {t: ., h: RALT}
-  - DEL
-  - PP
-  - {t: ESC, h: raise}
-  - {t: TAB, h: lower}
-  - {t: RET, h: lower}
-  - {t: SPACE, h: raise}
-  - {t: BSPC, h: adjust}
+  - {t: ., s: AltGr}
+  - ⌦
+  - ⏯
+  - {t: ESC, s: Raise}
+  - {t: ⇥, s: Lower}
+  - {t: ⏎, s: Lower}
+  - {t: ␣, s: Raise}
+  - {t: ⌫, s: Adjust}
   lower:
-  - '`'
+  - {t: ^, s: °}
   - F2
   - {t: ▽, type: trans}
   - F4
@@ -48,73 +48,73 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: '1', s: '!'}
+  - {t: '2', s: '"'}
+  - {t: '3', s: §}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: '&'}
+  - {t: '7', s: /}
+  - {t: '8', s: (}
+  - {t: '9', s: )}
+  - {t: '0', s: '='}
+  - {t: <, s: '>'}
+  - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
-  - AltGr+|
-  - {t: ▽, type: trans}
-  - '#'
-  - AltGr+7
-  - AltGr+8
-  - AltGr+9
-  - AltGr+0
+  - {t: '#', s: ''''}
+  - '{'
+  - '['
+  - ']'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
-  - {t: HOME, type: held}
-  - END
+  - ⊞
+  - ⤒ Pos1
+  - ⤓ End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - AltGr+Q
-  - AltGr+M
-  - AltGr+E
+  - '@'
+  - µ
+  - €
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - AltGr+-
-  - ;
+  - Ü
+  - \
+  - Ö
   - )
-  - ''''
-  - '-'
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&durchmesser'
+  - Ä
+  - {t: ß, s: '?'}
+  - 🖱 R
+  - 🖱 L
+  - Ø
   - UP
   - LEFT
   - DOWN
   - RIGHT
   - ']'
-  - AltGr+'
+  - ´
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - +
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AltGr+]
-  - '&smiley'
-  - {type: held}
+  - '~'
+  - ☻
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
   - {t: '$$mdi:bluetooth-off$$', s: 'OFF'}
-  - AltGr+2
-  - AltGr+3
+  - ²
+  - ³
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,15 +139,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
-  - NEXT
+  - ⏮
+  - ⏭
   - {t: ▽, type: trans}
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   rgb:
   - RGB TOG
   - RGB EFF
@@ -180,8 +180,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
