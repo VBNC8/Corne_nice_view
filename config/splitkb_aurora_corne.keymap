@@ -72,36 +72,36 @@
                 , <&macro_release &kp LALT>;
         };
 
-        // Kleiner-Gleich (≤) - Unicode U+2264
+        // Kleiner-Gleich (≤) -> Alt + 08804
         lte: lte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_PLUS &kp N2 &kp N2 &kp N6 &kp N4>, 
+                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N4>, 
                        <&macro_release &kp LALT>;
         };
 
-        // Größer-Gleich (≥) - Unicode U+2265
+        // Größer-Gleich (≥) -> Alt + 08805
         gte: gte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_PLUS &kp N2 &kp N2 &kp N6 &kp N5>, 
+                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N5>, 
                        <&macro_release &kp LALT>;
         };
 
-        // Ungleich (≠) - Unicode U+2260
+        // Ungleich (≠) -> Alt + 08800
         not_eq: not_eq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp KP_PLUS &kp N2 &kp N2 &kp N6 &kp N0>, 
+                       <&macro_tap &kp KP_N0 &kp KP_N8 &kp KP_N8 &kp KP_N0 &kp KP_N0>, 
                        <&macro_release &kp LALT>;
         };
     };
