@@ -59,6 +59,13 @@ parse_config:
     "&kp RPAR": "="
     "&kp RBKT": {t: "+", s: "*"}
 
+# 2. Welche Tasten in welchem Layer glühen sollen (IDs basierend auf Corne)
+layers:
+  lower: {highlight_keys: [32, 33]}
+  raise: {highlight_keys: [31, 34]}
+  adjust: {highlight_keys: [35]}
+
+# 3. Wie das Ganze am Ende aussieht
 draw_config:
   dark_mode: true
   n_columns: 1
@@ -66,15 +73,3 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
-  # Dies färbt die Layer-Überschriften rot
-  svg_style: |
-    text.label { fill: #f87171 !important; font-weight: bold; stroke: none !important; }
-
-# Dieser Block steuert, welche Taste auf welchem Layer rot leuchtet
-layers:
-  lower:
-    highlight_keys: [32, 33]  # Die großen vertikalen Daumentasten (Tab/Ret)
-  raise:
-    highlight_keys: [31, 34]  # Die Tasten daneben (Esc/Space)
-  adjust:
-    highlight_keys: [35]      # Die Backspace-Taste ganz rechts
