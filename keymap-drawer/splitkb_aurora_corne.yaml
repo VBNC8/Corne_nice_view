@@ -13,30 +13,30 @@ layers:
   - P
   - A
   - S
-  - {t: D, s: CTRL}
-  - {t: F, s: Shift}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
   - G
   - H
-  - {t: J, s: Shift}
-  - {t: K, s: CTRL}
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
   - L
   - {t: '-', s: _}
   - Z
-  - {t: X, s: Alt}
+  - {t: X, h: LALT}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - {t: ., s: AltGr}
+  - {t: ., h: RALT}
   - ⌦
-  - ⏯
-  - {t: ESC, s: Raise, type: held}
-  - {t: ⇥, s: Lower, type: held}
-  - {t: ↵, s: Lower, type: held}
-  - {t: ␣, s: Raise, type: held}
-  - {t: ⌫, s: Adjust, type: held}
+  - PP
+  - {t: ESC, s: Raise}
+  - {t: ⇥, s: Lower}
+  - {t: ↵, s: Lower}
+  - {t: ␣, s: Raise}
+  - {t: ⌫, s: Adjust}
   lower:
   - {t: ^, s: °}
   - F2
@@ -87,9 +87,9 @@ layers:
   - '='
   - Ä
   - {t: ß, s: '?'}
-  - 🖱 RMB
-  - 🖱 LMB
-  - Ø
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - '&durchmesser'
   - UP
   - LEFT
   - DOWN
@@ -105,14 +105,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '~'
-  - ☻
+  - '&smiley'
   - Task Mgr
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - NBSP
   - {t: ▽, type: trans}
   adjust:
-  - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
+  - '&bt_off'
   - ²
   - ³
   - {t: ▽, type: trans}
@@ -121,26 +121,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ✕, s: Alt F4}
-  - {t: '$$mdi:bluetooth$$', s: ⓵}
-  - {t: '$$mdi:bluetooth$$', s: ⓶}
-  - {t: '$$mdi:bluetooth$$', s: ⓷}
-  - {t: '$$mdi:bluetooth$$', s: ⓸}
-  - {t: '$$mdi:bluetooth$$', s: ⓹}
+  - Alt+F4
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ψ USB, s: ☀ ON}
+  - '&usb_on'
   - EP TOG
   - EP ON
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ⏮
-  - ⏭
+  - PREV
+  - NEXT
   - {t: ▽, type: trans}
   - F10
   - {t: ▽, type: trans}
