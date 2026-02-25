@@ -10,6 +10,10 @@ parse_config:
     "&mo 2": {t: "Raise", type: "held"}
     "&mo 3": {t: "Adjust", type: "held"}
 
+    # --- DEUTSCHE TASTEN & SYMBOLE ---
+    "&kp LC(LS(ESC))": "Task Mgr"
+    "&nbsp": "&nbsp"
+    
     # --- NAVIGATION & EINGABE ---
     "&kp RET": "⏎"
     "&kp BSPC": "⌫"
@@ -23,7 +27,7 @@ parse_config:
     "&kp HOME": "⤒ Pos1"
     "&kp END": "⤓ End"
     "&kp LC(LS(ESC))": "Task Mgr"
-    "&nbsp": "NBSP"
+    "&nbsp": "&nbsp"
 
     # --- ZAHLEN & DEUTSCHE FIXES ---
     "&kp N1": {t: "1", s: "!"}
@@ -60,6 +64,38 @@ parse_config:
     "&kp RBKT": {t: "+", s: "*"}
 
 
+    # --- MULTIMEDIA & MAUS ---
+    "&kp C_PREV": "⏮"
+    "&kp C_NEXT": "⏭"
+    "&kp C_PP": "⏯"
+    "&mkp LCLK": "🖱 LMB"
+    "&mkp RCLK": "🖱 RMB"
+
+    # --- SYSTEM & BT ---
+    "&usb_on": {t: "ψ USB", s: "☀ ON"}  
+    "&bt_off": {t: "$$mdi:bluetooth$$", s: "☀ OFF"}
+    "&bt BT_SEL 0": {t: "$$mdi:bluetooth$$", s: "⓵"}
+    "&bt BT_SEL 1": {t: "$$mdi:bluetooth$$", s: "⓶"}
+    "&bt BT_SEL 2": {t: "$$mdi:bluetooth$$", s: "⓷"}
+    "&bt BT_SEL 3": {t: "$$mdi:bluetooth$$", s: "⓸"}
+    "&bt BT_SEL 4": {t: "$$mdi:bluetooth$$", s: "⓹"}
+    "&kp LA(F4)": {t: "✕", s: "Alt F4"}
+
+    # --- MAKROS & SPEZIAL ---
+    "&smiley": "☻"
+    "&durchmesser": "Ø"
+    "&kp RA(M)": "µ"
+    "&kp RA(N2)": "²"  
+    "&kp RA(N3)": "³"
+
+    # --- MODIFIER FIXES ---
+    "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
+    "&hrm_shift LSHIFT F": {t: "F", s: "Shift"}
+    "&hrm_shift RSHIFT J": {t: "J", s: "Shift"}
+    "&hrm_safe RCTRL K": {t: "K", s: "CTRL"}
+    "&hrm_safe LALT X": {t: "X", s: "Alt"}
+    "&hrm_safe RALT DOT": {t: ".", s: "AltGr"}
+    
 draw_config:
   dark_mode: true
   n_columns: 1
@@ -67,4 +103,3 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
-
