@@ -71,11 +71,4 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
-  svg_style: |
-    /* Dieser Block färbt die Tasten basierend auf ihrer Position rot */
-    /* Lower Layer: Tasten 32 & 33 */
-    .layer-lower .keypos-32 rect, .layer-lower .keypos-33 rect { fill: #f87171 !important; }
-    /* Raise Layer: Tasten 31 & 34 */
-    .layer-raise .keypos-31 rect, .layer-raise .keypos-34 rect { fill: #f87171 !important; }
-    /* Adjust Layer: Taste 35 */
-    .layer-adjust .keypos-35 rect { fill: #f87171 !important; }
+
