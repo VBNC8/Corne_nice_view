@@ -58,31 +58,6 @@ parse_config:
     "&kp SLASH": {t: "-", s: "_"}
     "&kp RPAR": "="
     "&kp RBKT": {t: "+", s: "*"}
-    
-    # --- MULTIMEDIA, MAUS & BT ---
-    "&kp C_PREV": "⏮"
-    "&kp C_NEXT": "⏭"
-    "&kp C_PP": "⏯"
-    "&mkp LCLK": "🖱 LMB"
-    "&mkp RCLK": "🖱 RMB"
-    "&usb_on": {t: "ψ USB", s: "☀ ON"}  
-    "&bt_off": {t: "$$mdi:bluetooth$$", s: "☀ OFF"}
-    "&bt BT_SEL 0": {t: "$$mdi:bluetooth$$", s: "⓵"}
-    "&bt BT_SEL 1": {t: "$$mdi:bluetooth$$", s: "⓶"}
-    "&bt BT_SEL 2": {t: "$$mdi:bluetooth$$", s: "⓷"}
-    "&bt BT_SEL 3": {t: "$$mdi:bluetooth$$", s: "⓸"}
-    "&bt BT_SEL 4": {t: "$$mdi:bluetooth$$", s: "⓹"}
-    "&kp LA(F4)": {t: "✕", s: "Alt F4"}
-    "&smiley": "☻"
-    "&durchmesser": "Ø"
-
-    # --- MODIFIER (HOME ROW) ---
-    "&hrm_safe LCTRL D": {t: "D", s: "CTRL"}
-    "&hrm_shift LSHIFT F": {t: "F", s: "Shift"}
-    "&hrm_shift RSHIFT J": {t: "J", s: "Shift"}
-    "&hrm_safe RCTRL K": {t: "K", s: "CTRL"}
-    "&hrm_safe LALT X": {t: "X", s: "Alt"}
-    "&hrm_safe RALT DOT": {t: ".", s: "AltGr"}
 
 draw_config:
   dark_mode: true
@@ -91,10 +66,3 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
-  svg_style: |
-    text.label { fill: #f87171 !important; font-weight: bold; }
-
-layers:
-  lower: {highlight_keys: [31, 32]}
-  raise: {highlight_keys: [30, 33]}
-  adjust: {highlight_keys: [34]}
