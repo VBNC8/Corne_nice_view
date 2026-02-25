@@ -59,10 +59,6 @@ parse_config:
     "&kp RPAR": "="
     "&kp RBKT": {t: "+", s: "*"}
 
-layers:
-  lower: {highlight_keys: [32, 33]}
-  raise: {highlight_keys: [31, 34]}
-  adjust: {highlight_keys: [35]}
 
 draw_config:
   dark_mode: true
