@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ✕, s: Alt F4}
   - {t: '$$mdi:bluetooth$$', s: PC}
-  - S8 $mdi:bluetooth$$
+  - S8 $$mdi:bluetooth$$
   - {t: '$$mdi:bluetooth$$', s: Zbook}
   - {t: '$$mdi:bluetooth$$', s: ⓸}
   - {t: '$$mdi:bluetooth$$', s: ⓹}
