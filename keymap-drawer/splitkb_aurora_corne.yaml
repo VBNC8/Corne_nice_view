@@ -13,30 +13,30 @@ layers:
   - P
   - A
   - S
-  - {t: D, s: CTRL}
-  - {t: F, s: Shift}
+  - {t: D, h: CTRL}
+  - {t: F, h: Shift}
   - G
   - H
-  - {t: J, s: Shift}
-  - {t: K, s: CTRL}
+  - {t: J, h: Shift}
+  - {t: K, h: CTRL}
   - L
   - {t: '-', s: _}
   - Z
-  - {t: X, s: Alt}
+  - {t: X, h: Alt}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - {t: ., s: AltGr}
+  - {t: ., h: AltGr}
   - ⌦
   - ⏯
-  - {t: ESC, s: Raise, type: held}
-  - {t: ⇥, s: Lower, type: held}
-  - {t: ↵, s: Lower, type: held}
-  - {t: ␣, s: Raise, type: held}
-  - {t: ⌫, s: Adjust, type: held}
+  - {t: ESC, h: Raise, type: held}
+  - {t: ⇥, h: Lower, type: held}
+  - {t: ↵, h: Lower, type: held}
+  - {t: ␣, h: Raise, type: held}
+  - {t: ⌫, h: Adjust, type: held}
   lower:
   - {t: ^, s: °}
   - F2
