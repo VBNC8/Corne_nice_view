@@ -98,7 +98,7 @@ parse_config:
     "&hrm_safe RALT DOT": {t: ".", s: "AltGr"}
     
 draw_config:
-  fontsize: 14  # Erhöht die Basisgröße
+  fontsize: 18  # Erhöht die Basisgröße
   dark_mode: true
   n_columns: 1
   key_w: 60
