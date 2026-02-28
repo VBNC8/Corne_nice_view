@@ -15,7 +15,6 @@
         input-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
-    // Wir "mischen" den Button in die Matrix
     kscan_composite: kscan_composite {
         compatible = "zmk,kscan-composite";
         label = "KSCAN_COMPOSITE";
@@ -23,8 +22,9 @@
         matrix { kscan = <&kscan>; };
         direct {
             kscan = <&encoder_btn_pin>;
-            column-offset = <0>; // Er ist jetzt Teil von COL0
-            row-offset = <0>;    // Er reagiert auf ROW0 (P1.13)
+            // Wir mappen den Button logisch weit weg von der Standard-Matrix
+            column-offset = <0>; 
+            row-offset = <4>; 
         };
     };
 
