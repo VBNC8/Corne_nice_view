@@ -36,7 +36,8 @@ layers:
   - {t: ⇥, h: Lower, type: held}
   - {t: ↵, h: Lower, type: held}
   - {t: ␣, h: Raise, type: held}
-  - {t: ⌫, h: Adjust, type: held}
+  - '&lt_hp 3 BSPC ,'
+  - '&mkp MCLK'
   lower:
   - {t: ^, s: °}
   - F2
@@ -73,6 +74,7 @@ layers:
   - ⤒ Pos1
   - ⤓ End
   - {t: ▽, type: trans}
+  - '&trans ,'
   - {t: ▽, type: trans}
   raise:
   - '@'
@@ -110,7 +112,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&nbsp'
-  - {t: ▽, type: trans}
+  - '&trans ,'
+  - '&mkp MCLK'
   adjust:
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
   - ²
@@ -147,7 +150,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&trans ,'
+  - '&bootloader'
   rgb:
   - RGB TOG
   - RGB EFF
@@ -184,4 +188,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&trans ,'
+  - RGB TOG
