@@ -37,7 +37,7 @@ layers:
   - {t: ↵, h: Lower, type: held}
   - {t: ␣, h: Raise, type: held}
   - {t: ⌫, h: Adjust, type: held}
-  - '&mkp MCLK'
+  - X
   lower:
   - {t: ^, s: °}
   - F2
@@ -74,7 +74,7 @@ layers:
   - ⤒ Pos1
   - ⤓ End
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&nbsp'
   - ''
   raise:
   - '@'
