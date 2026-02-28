@@ -163,11 +163,10 @@
         };
     };
 
-/* Globales Sensor-Binding (falls im Layer nichts anderes steht) */
-    /* Du kannst hier auch Maus-Scrollen eintragen */
+/* Globales Sensor-Binding für das Scrollen */
     right_encoder_sensor: right_encoder_sensor {
         compatible = "zmk,sensor-binding";
         #binding-cells = <0>;
         bindings = <&inc_dec_kp SCROLL_UP SCROLL_DOWN>;
     };
-}; // Hier endet das Root-Level der Datei
+}; // Ende des Root-Knotens (/)
