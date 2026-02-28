@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - ''
+  - {t: '1', s: '!'}
   - ''
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: CTRL}
   - L
   - {t: '-', s: _}
-  - ''
+  - {t: '2', s: '"'}
   - ''
   - Z
   - {t: X, h: Alt}
@@ -36,7 +36,7 @@ layers:
   - ','
   - {t: ., h: AltGr}
   - ⌦
-  - ''
+  - {t: '3', s: §}
   - ⏯
   - {t: ESC, h: Raise, type: held}
   - {t: ⇥, h: Lower, type: held}
@@ -55,7 +55,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
@@ -67,7 +67,7 @@ layers:
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {t: <, s: '>'}
   - {t: ▽, type: trans}
@@ -79,7 +79,7 @@ layers:
   - ']'
   - '}'
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:microsoft-windows-classic$$
   - ⤒ Pos1
@@ -98,7 +98,7 @@ layers:
   - \
   - Ö
   - '='
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - Ä
   - {t: ß, s: '?'}
@@ -110,7 +110,7 @@ layers:
   - DOWN
   - RIGHT
   - {t: +, s: '*'}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ´
   - {t: ▽, type: trans}
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '~'
-  - ''
+  - {t: ▽, type: trans}
   - ☻
   - Task Mgr
   - {t: ▽, type: trans}
@@ -141,7 +141,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ✕, s: Alt F4}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {t: '$$mdi:bluetooth$$', h: PC, s: ⓵}
   - {t: '$$mdi:bluetooth$$', h: S8, s: ⓶}
@@ -153,7 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {t: ψ USB, s: ☀ ON}
   - EP TOG
@@ -165,7 +165,7 @@ layers:
   - ⏮
   - ⏭
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,7 +184,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
   - RGB EFR
@@ -196,19 +196,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
