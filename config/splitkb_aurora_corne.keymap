@@ -36,7 +36,8 @@
         matrix { kscan = <&kscan>; };
         direct {
             kscan = <&encoder_button>;
-            column-offset = <5>; // Wir legen ihn ganz ans Ende
+            column-offset = <30>; // Wir springen direkt hinter die 30 Tasten des Transforms
+            row-offset = <0>;
         };
     };
 
