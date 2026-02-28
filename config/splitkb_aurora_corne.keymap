@@ -8,17 +8,40 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    // 1. Der Button als eigenständiges Device außerhalb der Matrix
-    buttons {
-        compatible = "gpio-keys";
-        encoder_button: encoder_button {
-            label = "Encoder Button";
-            gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-            linux,code = <KEY_F10>; // Sendet F10 zum Testen
+    encoder_button: encoder_button {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "Encoder Button";
+        input-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    };
+
+    // Wir nutzen den "zmk,key-node", um den Pin direkt an eine Taste zu binden
+    // ohne die Matrix-Logik zu berühren.
+    zmk_buttons {
+        compatible = "zmk,behaviors";
+        encoder_btn: encoder_btn {
+            compatible = "zmk,behavior-sensor-rotate"; // Workaround-Container
+            #sensor-binding-cells = <0>;
+            bindings = <&kp F12>, <&kp F12>; 
+        };
+    };
+
+    // Da der gpio-keys Ansatz im Devicetree manchmal zickig ist, 
+    // gehen wir zurück zum sichersten Weg: Wir fügen den Pin 22 
+    // als Ein-Finger-Matrix hinzu, aber OHNE Versatz-Chaos.
+    
+    kscan_composite: kscan_composite {
+        compatible = "zmk,kscan-composite";
+        label = "KSCAN_COMPOSITE";
+        #binding-cells = <0>;
+        matrix { kscan = <&kscan>; };
+        direct {
+            kscan = <&encoder_button>;
+            column-offset = <5>; // Wir legen ihn ganz ans Ende
         };
     };
 
     chosen {
+        zmk,kscan = &kscan_composite;
         zmk,underglow = &led_strip;
         zmk,matrix_transform = &five_column_transform;
     };
