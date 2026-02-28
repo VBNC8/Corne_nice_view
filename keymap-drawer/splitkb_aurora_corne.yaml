@@ -1,6 +1,7 @@
-layout: {zmk_keyboard: splitkb_aurora_corne, layout_name: five_column_transform}
+layout: {zmk_keyboard: splitkb_aurora_corne}
 layers:
   default:
+  - ''
   - Q
   - W
   - E
@@ -11,6 +12,8 @@ layers:
   - I
   - O
   - P
+  - ''
+  - ''
   - A
   - S
   - {t: D, h: CTRL}
@@ -21,6 +24,8 @@ layers:
   - {t: K, h: CTRL}
   - L
   - {t: '-', s: _}
+  - ''
+  - ''
   - Z
   - {t: X, h: Alt}
   - C
@@ -31,14 +36,15 @@ layers:
   - ','
   - {t: ., h: AltGr}
   - ⌦
+  - ''
   - ⏯
   - {t: ESC, h: Raise, type: held}
   - {t: ⇥, h: Lower, type: held}
   - {t: ↵, h: Lower, type: held}
   - {t: ␣, h: Raise, type: held}
   - {t: ⌫, h: Adjust, type: held}
-  - T
   lower:
+  - ''
   - {t: ^, s: °}
   - F2
   - {t: ▽, type: trans}
@@ -49,6 +55,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
   - {t: '3', s: §}
@@ -59,6 +67,8 @@ layers:
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
+  - ''
+  - ''
   - {t: <, s: '>'}
   - {t: ▽, type: trans}
   - '|'
@@ -69,14 +79,15 @@ layers:
   - ']'
   - '}'
   - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - $$mdi:microsoft-windows-classic$$
   - ⤒ Pos1
   - ⤓ End
   - {t: ▽, type: trans}
   - '&nbsp'
-  - {t: ▽, type: trans}
   raise:
+  - ''
   - '@'
   - µ
   - €
@@ -87,6 +98,8 @@ layers:
   - \
   - Ö
   - '='
+  - ''
+  - ''
   - Ä
   - {t: ß, s: '?'}
   - 🖱 RMB
@@ -97,6 +110,8 @@ layers:
   - DOWN
   - RIGHT
   - {t: +, s: '*'}
+  - ''
+  - ''
   - ´
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,14 +122,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '~'
+  - ''
   - ☻
   - Task Mgr
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&nbsp'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   adjust:
+  - ''
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
   - ²
   - ³
@@ -125,6 +141,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ✕, s: Alt F4}
+  - ''
+  - ''
   - {t: '$$mdi:bluetooth$$', h: PC, s: ⓵}
   - {t: '$$mdi:bluetooth$$', h: S8, s: ⓶}
   - {t: '$$mdi:bluetooth$$', h: Zbook, s: ⓷}
@@ -135,6 +153,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ψ USB, s: ☀ ON}
   - EP TOG
   - EP ON
@@ -145,14 +165,15 @@ layers:
   - ⏮
   - ⏭
   - {t: ▽, type: trans}
+  - ''
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   rgb:
+  - ''
   - RGB TOG
   - RGB EFF
   - RGB BRI
@@ -163,6 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - RGB EFR
   - RGB BRD
@@ -173,6 +196,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,8 +208,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
   - BT CLR
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
