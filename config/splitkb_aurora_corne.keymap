@@ -8,32 +8,32 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    // Definition des physischen Pins P0.22 (Pin 7) für den Encoder-Knopf
+    // 1. Hardware-Definitionen
     encoder_btn_pin: kscan_direct {
         compatible = "zmk,kscan-gpio-direct";
         label = "ENCODER_BUTTON_DIRECT";
         input-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
-    // Kombination der Standard-Matrix mit dem neuen Direkt-Pin
-    kscan_composite {
+    kscan_composite: kscan_composite {
         compatible = "zmk,kscan-composite";
         label = "KSCAN_COMPOSITE";
         #binding-cells = <0>;
         matrix { kscan = <&kscan0>; };
         direct {
             kscan = <&encoder_btn_pin>;
-            row-offset = <4>; // Schiebt den Button in eine virtuelle 5. Reihe
+            row-offset = <4>; 
         };
     };
 
+    // 2. ZMK sagen, was es davon benutzen soll
     chosen {
         zmk,kscan = &kscan_composite;
         zmk,underglow = &led_strip;
         zmk,matrix_transform = &five_column_transform;
     };
 
-    // Deine bestehenden Konfigurationen
+    // 3. Deine restliche Konfiguration
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
