@@ -8,37 +8,30 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    // Wir definieren den Pin als eigenständigen KSCAN
+    // 1. Definition des physischen Pins
     kscan_button: kscan_button {
         compatible = "zmk,kscan-gpio-direct";
         label = "KSCAN_BUTTON";
         input-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
-    // Hier liegt der Zauber: Wir erstellen eine ZWEITE Keymap nur für diesen Button
-    // Diese wird mit der Haupt-Keymap kombiniert, ohne Indizes zu verschieben.
+    // 2. Zusammenführung: Matrix (36 Tasten) + Button (1 Taste)
     kscan_composite: kscan_composite {
         compatible = "zmk,kscan-composite";
         label = "KSCAN_COMPOSITE";
         #binding-cells = <0>;
-        
-        // Teil 1: Die normale Matrix (30 Tasten)
         matrix { kscan = <&kscan>; };
-        
-        // Teil 2: Der Button (Taste Nr. 31)
-        // Wir nutzen einen Offset, der garantiert außerhalb des Transforms liegt
         direct {
             kscan = <&kscan_button>;
-            row-offset = <5>; 
-            column-offset = <0>;
+            // Wir setzen den Offset EXAKT hinter die 36 Tasten deiner Matrix
+            column-offset = <36>; 
         };
-    };
+    }
 
     chosen {
         zmk,kscan = &kscan_composite;
         zmk,underglow = &led_strip;
-        // WICHTIG: Der Transform darf NUR auf die Matrix angewendet werden, 
-        // nicht auf den Composite. Das ist oft die Fehlerquelle.
+        // Der Transform sorgt dafür, dass die 36 Matrix-Pins richtig sortiert werden
         zmk,matrix_transform = &five_column_transform;
     };
 
