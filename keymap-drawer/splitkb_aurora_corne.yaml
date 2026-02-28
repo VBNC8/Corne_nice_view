@@ -37,7 +37,7 @@ layers:
   - {t: ↵, h: Lower, type: held}
   - {t: ␣, h: Raise, type: held}
   - {t: ⌫, h: Adjust, type: held}
-  - F10
+  - T
   lower:
   - {t: ^, s: °}
   - F2
@@ -75,7 +75,7 @@ layers:
   - ⤓ End
   - {t: ▽, type: trans}
   - '&nbsp'
-  - F10
+  - {t: ▽, type: trans}
   raise:
   - '@'
   - µ
@@ -113,7 +113,7 @@ layers:
   - {t: ▽, type: trans}
   - '&nbsp'
   - {t: ▽, type: trans}
-  - F10
+  - {t: ▽, type: trans}
   adjust:
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
   - ²
@@ -151,7 +151,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F10
+  - {t: ▽, type: trans}
   rgb:
   - RGB TOG
   - RGB EFF
@@ -189,4 +189,4 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F10
+  - {t: ▽, type: trans}
