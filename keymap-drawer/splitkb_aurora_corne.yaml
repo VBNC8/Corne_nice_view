@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: splitkb_aurora_corne, layout_name: five_column_transform}
+layout: {zmk_keyboard: splitkb_aurora_corne}
 layers:
   default:
   - Q
