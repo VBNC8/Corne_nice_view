@@ -37,7 +37,6 @@ layers:
   - {t: ↵, h: Lower, type: held}
   - {t: ␣, h: Raise, type: held}
   - {t: ⌫, h: Adjust, type: held}
-  - '&mkp MCLK'
   lower:
   - {t: ^, s: °}
   - F2
@@ -73,7 +72,6 @@ layers:
   - $$mdi:microsoft-windows-classic$$
   - ⤒ Pos1
   - ⤓ End
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
@@ -113,7 +111,6 @@ layers:
   - {t: ▽, type: trans}
   - '&nbsp'
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
   adjust:
   - {t: '$$mdi:bluetooth$$', s: ☀ OFF}
   - ²
@@ -151,7 +148,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
   rgb:
   - RGB TOG
   - RGB EFF
@@ -189,4 +185,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RGB TOG
