@@ -104,3 +104,8 @@ draw_config:
   split_gap: 30
   draw_key_caps: true
 
+layout:
+  n_columns: 11 # 5 links + 6 rechts (wegen deinem extra Taster)
+  # Hier könnten wir theoretisch jede Taste einzeln positionieren, 
+  # aber versuchen wir erst mal den "shrink" Befehl:
+
