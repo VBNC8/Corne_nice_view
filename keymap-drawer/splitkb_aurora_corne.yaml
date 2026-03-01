@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '1', s: '!'}
+  - '&mkp MCLK'
   - ''
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: CTRL}
   - L
   - {t: '-', s: _}
-  - {t: '2', s: '"'}
+  - ''
   - ''
   - Z
   - {t: X, h: Alt}
@@ -36,7 +36,7 @@ layers:
   - ','
   - {t: ., h: AltGr}
   - ⌦
-  - {t: '3', s: §}
+  - ''
   - ⏯
   - {t: ESC, h: Raise, type: held}
   - {t: ⇥, h: Lower, type: held}
