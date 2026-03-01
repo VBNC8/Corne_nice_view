@@ -105,4 +105,4 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
-  shrink_wide_layouts: true
+  skip_keys: [0, 12, 24, 23, 35]
