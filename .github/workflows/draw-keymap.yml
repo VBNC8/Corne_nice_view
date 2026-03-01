@@ -11,10 +11,11 @@ on:
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    with:
+  with:
       keymap_patterns: "config/*.keymap"
       output_folder: "keymap-drawer"
       config_path: "config/keymap_drawer.config.yaml"
-      # Hier fügen wir die Skip-Anweisung für den Parser hinzu:
-      parse_args: "--skip-keys 0 13 26 25 38" 
-      commit_message: "docs: [keymap-drawer] Randspalten entfernt"
+      # Versuche es ohne das doppelte Minus, falls die Action intern anders parst, 
+      # oder erzwinge das skip-keys flag:
+      parse_args: "--skip-keys 0 13 26 25 38"
+      draw_args: "--select-layers 0 1 2 3 4" # Optional: Nur bestimmte Layer zeichnen
