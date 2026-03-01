@@ -1,3 +1,12 @@
+/*
+ * {
+ * "layout": {"n_columns": 12},
+ * "draw_config": {
+ * "skip_keys": [0, 13, 26, 25, 38]
+ * }
+ * }
+ */
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
