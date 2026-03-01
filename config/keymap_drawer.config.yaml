@@ -104,7 +104,3 @@ draw_config:
   split_gap: 30
   draw_key_caps: true
 
-  # Wir filtern die IDs der äußeren Randspalten:
-  # Links: 0, 13, 26
-  # Rechts: 24, 37 (die 11 lassen wir weg, damit dein Taster gezeichnet wird!)
-skip_keys: [0, 13, 26, 25, 38]
