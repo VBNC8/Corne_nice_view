@@ -107,4 +107,4 @@ draw_config:
   # Wir filtern die IDs der äußeren Randspalten:
   # Links: 0, 13, 26
   # Rechts: 24, 37 (die 11 lassen wir weg, damit dein Taster gezeichnet wird!)
-  skip_keys: [0, 13, 26, 25, 38]
+skip_keys: [0, 13, 26, 25, 38]
