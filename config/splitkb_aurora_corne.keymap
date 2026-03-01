@@ -68,7 +68,7 @@
 &none &kp Z  &hrm_safe LALT X   &kp C              &kp V                &kp B                  &kp N      &kp M                &kp COMMA          &hrm_safe RALT DOT   &kp DEL   &none 
                                 &kp C_PP           &lt 2 ESC            &lt 1 TAB              &lt 1 RET  &lt_hp 2 SPACE       &lt_hp 3 BSPC
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp UP DOWN>;
         };
 
         lower_layer {
@@ -98,7 +98,7 @@
 &none &usb_on       &ext_power EP_TOG  &ext_power EP_ON  &trans        &trans          &trans  &trans  &kp C_PREV  &kp C_NEXT  &trans     &trans 
                                        &kp F10           &trans        &trans          &trans  &trans  &trans      
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_kp PG_DN PG_UP>;
         };
 
         rgb_layer {
