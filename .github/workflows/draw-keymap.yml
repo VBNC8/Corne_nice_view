@@ -15,4 +15,6 @@ jobs:
       keymap_patterns: "config/*.keymap"
       output_folder: "keymap-drawer"
       config_path: "config/keymap_drawer.config.yaml"
-      commit_message: "docs: [keymap-drawer] Symbole und Layout verfeinert"
+      # Hier fügen wir die Skip-Anweisung für den Parser hinzu:
+      parse_args: "--skip-keys 0 13 26 25 38" 
+      commit_message: "docs: [keymap-drawer] Randspalten entfernt"
