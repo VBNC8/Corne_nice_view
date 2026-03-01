@@ -95,6 +95,8 @@ parse_config:
     "&hrm_safe RCTRL K": {t: "K", h: "CTRL"}
     "&hrm_safe LALT X": {t: "X", h: "Alt"}
     "&hrm_safe RALT DOT": {t: ".", h: "AltGr"}
+    check_unbound_symbols: false
+    skip_up_to_n_bindings: 0
     
 draw_config:
   dark_mode: true
@@ -103,3 +105,4 @@ draw_config:
   key_h: 56
   split_gap: 30
   draw_key_caps: true
+  shrink_wide_layouts: true
